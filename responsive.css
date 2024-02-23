@@ -1,0 +1,11 @@
+/* TABLET VIEW */
+@media only screen and (max-width:768px) {
+body{
+    font-size: 80%;
+}
+}
+
+/* MOBILE VIEW */
+@media only screen and (max-width: 390px) {
+  
+}
