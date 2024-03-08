@@ -1,11 +1,67 @@
 /* CSS GOES HERE */
-/*font*/
-p{
-    font-family: Georgia;
+/*font */
+.h1{
+    font-family: "Averia Serif Libre", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.5em;
+    color: #30444A;
     }
-h2 {
-  font-family: av;  
+.h2{
+    font-family: "Averia Serif Libre", serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.17em;
+    color: #30444A;
+    text-align: center;
 }
+.header_h2 {
+    font-family: "Averia Serif Libre", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em;
+    color: #30444A;
+    text-align: center;
+}
+.h3 {
+    font-family: "Averia Serif Libre", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50%;
+    color: #30444A;
+}
+.h4{
+    font-family: "Averia Serif Libre", serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 1.17em;
+    color: #30444A;
+}
+.p1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-size: 1.2em;
+    color: #30444A;
+}
+.p2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-size: 1em;
+    color: #30444A;
+  }
+.p3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-size: .9em;
+    color: #30444A;
+ }
+ a.main_nav_link{
+    font-family: "Averia Serif Libre", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.225em;
+    color: #30444A;
+ }
 body {
     margin: 0;
     padding: 0;
@@ -13,17 +69,70 @@ body {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
+    background-color:#F4EFE6 ;
+/*header/logo */
 }
-section {
-    padding: 60px 40px;
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    max-width: 250px;
+    height: auto;
+    position: relative;
+    padding-top: 40px;
 }
+.nav_links {
+    list-style: none;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 8%;
+    gap: 25px;
+}
+/*welcome */
+.welcome {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    max-width: 1000px;
+    height: auto;
+}
+.header_h2 {
+    text-align: center;
+}
+/*about */
+.image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 360px;
+    height: 360px;
+}
+.p1 {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width: 754px;
+    height: 456px;
+    font-size: 21px;
+    line-height: 118%;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+/*experience */
 
 section:nth-child(even) {
     background-color: #f2f2f2;
 }
 
 section#about {
-    background-color: F4EFE6 ;
+
     background-image: url(images/Ripped\ Paper_1.png);
     
 }
@@ -34,16 +143,114 @@ section#about {
     margin: 0 auto;
 }
 
-nav ul {
-    list-style: none;
+.row {
     display: flex;
-    flex-flow: row;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+.column {
+    flex: 50%;
+    flex-direction: column;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+/*portfolio */
+.date-location{
+    font-family: "Averia Serif Libre", serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 1.17em;
+    color: #30444A;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
-    gap: 10px;
+    padding-bottom: 7px;
+}
+.title {
+    font-family: "Averia Serif Libre", serif;
+    font-weight: 300;
+    font-style: bold;
+    font-size: 1.20em;
+    color: #30444A;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+.description {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-size: 1em;
+    color: #30444A;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    width: 482px;
+}
+.mockup {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 360px;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    align-items: center;
+    padding: 24px 26px;
+    gap: 19px;
+    width: 534px;
+    height: 791px;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    padding: 26px
 }
 
+/*contact */
+
+/*footer */
+.social_media {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 5%; height:auto;
+    min-width: 50px; min-height: 50px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    gap: 33px;
+}
 footer {
-    background-color: #ffffff;
-    color: #000000;
-    padding: 10px;
+    background-color: #8EA2A6;
+    padding: 1%;
+}
+.footer_links {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 5px;
+    gap: 33px;
+}
+a.footerlink {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-size: 1.2em;
+    color: #30444A;
 }
