@@ -1,11 +1,26 @@
 /* TABLET VIEW */
 @media only screen and (max-width:768px) {
-body{
+.body{
     font-size: 80%;
+}
+.container{
+    align-content: center;
+    height: 60vh;
 }
 }
 
 /* MOBILE VIEW */
 @media only screen and (max-width: 390px) {
-  
+    .body{
+        font-size: 60%;
+    }
+    .welcome {
+    max-width: 80%;
+ }
+.menu {
+ top: px;
+ left: 21px;
+    }
+
 }
+
