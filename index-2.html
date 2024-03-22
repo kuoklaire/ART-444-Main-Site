@@ -1,291 +1,387 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Claire Kuo - Welcome to My Webpage!</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="responsive.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Claire Kuo - Welcome to My Webpage!</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="responsive.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+          rel="stylesheet">
 </head>
 <body>
-  <div class="decor">
-  </div>
-<!-- Main Navigation --> 
+<!--  <div class="decor">-->
+<!--    <div class="butterfly">-->
+<!--      <img src="images/Portfolio_butterfly.png" alt="butterfly" width="150px">-->
+<!--    </div>-->
+<!--    <div class="cherry">-->
+<!--      <img src="images/Portfolio_cherry.png" alt="cherry" width="150px">-->
+<!--    </div>-->
+<!--    <div class="flower">-->
+<!--      <img src="images/Portfolio_flower.png" alt="flower" width="150px">-->
+<!--    </div>-->
+<!--    <div class="star">-->
+<!--      <img src="images/Portfolio_star.png" alt="star" width="150px">-->
+<!--    </div>-->
+<!--    <div class="bow">-->
+<!--      <img src="images/Portfolio_bow.png" alt="bow"width="150px">-->
+<!--    </div>-->
+<!--  </div>-->
+
+
+<!-- Main Navigation -->
 <!--<div id="background-image" style="height: 200px; background-image: url('images/Ripped Paper_1.png'); z-index: 1">-->
 <!--</div>-->
 <header class="header">
-  <div><img alt="logo" class="logo" src="images/Logo.png" ></div>
+    <div><img alt="logo" class="logo" src="images/Logo.png"></div>
+    <!-- <div class="main-nav">
+        <nav>
+            <ul class="nav-links">
+                <li><a class="main-nav-links" href="#header">Home</a></li>
+                <li><a class="main-nav-links" href="#about">About</a></li>
+                <li><a class="main-nav-links" href="#experience">Experience</a></li>
+                <li><a class="main-nav-links" href="#portfolio">Portfolio</a></li>
+                <li><a class="main-nav-links" href="#faqs">FAQs</a></li>
+                <li><a class="main-nav-links" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div> -->
 </header>
-<div onclick="myMenu()" class="menu" id="menuButton"></div>
-<div id= "mymenu" class="mobile-menu-popout">
-  <ul class="mobile-nav-links">
-    <li><a class="main-nav-links" href="#header">Home</a></li>
-    <li><a class="main-nav-links" href="#about">About</a></li>
-    <li><a class="main-nav-links" href="#experience">Experience</a></li>
-    <li><a class="main-nav-links" href="#portfolio">Portfolio</a></li>
-    <li><a class="main-nav-links" href="#faqs">FAQs</a></li>
-    <li><a class="main-nav-links" href="#contact">Contact</a></li>
-  </ul>
+<div class="menu" id="menuButton" onclick="myMenu()"></div>
+<div class="mobile-menu-popout" id="mymenu">
+    <ul class="mobile-nav-links">
+        <li><a class="main-nav-links" href="#header">Home</a></li>
+        <li><a class="main-nav-links" href="#about">About</a></li>
+        <li><a class="main-nav-links" href="#experience">Experience</a></li>
+        <li><a class="main-nav-links" href="#portfolio">Portfolio</a></li>
+        <li><a class="main-nav-links" href="#faqs">FAQs</a></li>
+        <li><a class="main-nav-links" href="#contact">Contact</a></li>
+    </ul>
 </div>
 
-<!-- Main Header --> 
-  <section id="header" class="header">
-    <div><img src="images/Portfolio_Welcome.png" class="welcome" alt="Welcome"/></div>
+<!-- Main Header -->
+<section class="header" id="header">
+    <div><img alt="Welcome" class="welcome" src="images/Portfolio_Welcome.png"/></div>
     <div class="subheading"><h2>to my collage of creativity!</h2></div>
-  </section>
-  
-<!-- About Section --> 
+</section>
+
+<!-- About Section -->
 <section id="about">
-  <div class="container">
-      <div class="row">
-          <div><img src="images/Portfolio_About.png" class="image" alt="About" /></div>
-          <div class="aboutme">
-            <div class="aboutme-header"><h3>Hi! My name is Claire Kuo.</h3></div>
-            <div class="aboutme-paragraph"> <p>I am an User Interface and Graphic Designer with experience in the field of graphic design, marketing
-                  communications, and was previously a UI intern at BOX Digital Ltd. in Taiwan. I am currently a
-                  student at San Diego State University with a Graphic Design major and a minor in marketing and
-                  Honors minor in Interdisciplinary Studies graduating in 2025. My innovative mindset stems from my
-                  experience in working with different collaborative and professional environments and I continuously
-                  look for spaces to expand my skill set and utilize my unique approach to collage research and visual
-                  design.</p> </div>
-          </div>
-      </div>
-  </div>
-</section>
-
-<!-- Skills Section -->  
-<section id="experience">
-  <div class="container">
-    <div><img src="images/Portfolio_Experience.png" class="image" alt="Experience"/></div>
-    <div class="subheading"><h2>Postcards of my experiences and skillset. Click to flip through!</h2></div>
-    <div class="experience-card-column">
-    <div class="experience-card">
-      <div class="experience-card-content">
-        <div class="experience-card-date-location">
-          <div class="date">March 21, 2024</div>
-          <div class="location">San Diego, CA</div>
-        </div>
-        <div class="experience-card-title">
-          <h4>Company title</h4>
-          <p1>UI intern</p1>
-        </div>
-        <div class="experience-card-description">
-            <ul>
-                <li>Skill 1</li>
-                <li>Skill 2</li>
-                <li>Skill 3</li>
-            </ul>
-        </div>
-      </div>
-    </div>
-    <div class="experience-card">
-      <div class="experience-card-content">
-        <div class="experience-card-date-location">
-          <div class="date">March 21, 2024</div>
-          <div class="location">San Diego, CA</div>
-        </div>
-        <div class="experience-card-title">
-          <h4>Company title</h4>
-          <p1>UI intern</p1>
-        </div>
-        <div class="experience-card-description">
-            <ul>
-                <li>Skill 1</li>
-                <li>Skill 2</li>
-                <li>Skill 3</li>
-            </ul>
-        </div>
-      </div>
-    </div>
-    <div class="experience-card">
-      <div class="experience-card-content">
-        <div class="experience-card-date-location">
-          <div class="date">March 21, 2024</div>
-          <div class="location">San Diego, CA</div>
-        </div>
-        <div class="experience-card-title">
-          <h4>Company title</h4>
-          <p1>UI intern</p1>
-        </div>
-        <div class="experience-card-description">
-            <ul>
-                <li>Skill 1</li>
-                <li>Skill 2</li>
-                <li>Skill 3</li>
-            </ul>
-        </div>
-      </div>
-    </div>
-  </div>  <div class="centered-button-div"><input class="button-secondary" type="Download" value="Download Resume"></div>
-
-</section>
-
-<!-- Gallery Section -->  
-<section id="portfolio">
-  <div class="container">
-    <div><img src="images/Portfolio_Portfolio.png" class="image" alt="Portfolio"/></div>
-    <div class="subheading"><h2>Here is my collection of all my work, hope you enjoy. Have any questions or want to connect? contact me below!</h2></div>
-    <div class="portfolio-gallery">
-      <div class="portfolio-row"> 
-        <div class="portfolio-container">
-          <div class="portfolio-date-location"><h4>Date</h4><h4>Location</h4></div>
-          <div><img src="images/APSASDSU_HSC_Postermockup.png" class="mockup" alt="High School Conference Poster"/></div>
-            <div class="portfolio-content">
-              <div class="portfolio-title"><h4>title</h4></div>
-              <div class="portfolio-description"><p2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac orci nec velit sagittis euismod quis non purus. Aliquam vel volutpat enim. Nulla sollicitudin ligula ac gravida finibus. Vestibulum enim metus, consequat sit amet maximus at, convallis posuere enim.</p2></div>
+    <div class="container">
+        <div class="row">
+            <div><img alt="About" class="image" src="images/Portfolio_About.png"/></div>
+            <div class="aboutme">
+                <div class="aboutme-header"><h3>Hi! My name is Claire Kuo.</h3></div>
+                <div class="aboutme-paragraph"><p>I am an User Interface and Graphic Designer with experience in the
+                    field of graphic design, marketing
+                    communications, and was previously a UI intern at BOX Digital Ltd. in Taiwan. I am currently a
+                    student at San Diego State University with a Graphic Design major and a minor in marketing and
+                    Honors minor in Interdisciplinary Studies graduating in 2025. My innovative mindset stems from my
+                    experience in working with different collaborative and professional environments and I continuously
+                    look for spaces to expand my skill set and utilize my unique approach to collage research and visual
+                    design.</p></div>
             </div>
         </div>
-        <div class="portfolio-container">
-          <div class="portfolio-date-location"><h4>Date</h4><h4>Location</h4></div>
-          <div ><img  src="images/bookcoverfinal_mockup.PNG" class="mockup" alt="penguin book cover"/></div>
-          <div class="portfolio-content">
-           <div class="portfolio-title"><h4>title</h4></div>
-           <div class="portfolio-description"><p2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac orci nec velit sagittis euismod quis non purus. Aliquam vel volutpat enim. Nulla sollicitudin ligula ac gravida finibus. Vestibulum enim metus, consequat sit amet maximus at, convallis posuere enim.</p2></div>
-          </div>
-        </div>
-      </div>
-      <div class="portfolio-row">
-        <div class="portfolio-container">
-          <div class="portfolio-date-location"><h4>Date</h4><h4>Location</h4></div>
-          <div><img  src="images/Mailroom Mockup.png" class="mockup" alt="Mailroom Software UI Design"/></div>
-          <div class="portfolio-content">
-           <div class="portfolio-title"><h4>title</h4></div>
-           <div class="portfolio-description"><p2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac orci nec velit sagittis euismod quis non purus. Aliquam vel volutpat enim. Nulla sollicitudin ligula ac gravida finibus. Vestibulum enim metus, consequat sit amet maximus at, convallis posuere enim.</p2></div>
-          </div>
-         </div>
-        <div class="portfolio-container">
-          <div class="portfolio-date-location"><h4>Date</h4><h4>Location</h4></div>
-          <div><img  src="images/Shopping_Bag_Mockup_guide.png" class="mockup" alt="Shopping Bag"/></div>
-          <div class="portfolio-content">
-          <div class="portfolio-title"><h4>title</h4></div>
-          <div class="portfolio-description"><p2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac orci nec velit sagittis euismod quis non purus. Aliquam vel volutpat enim. Nulla sollicitudin ligula ac gravida finibus. Vestibulum enim metus, consequat sit amet maximus at, convallis posuere enim.</p2></div>
-          </div>
-        </div>
-      </div>
-      <div class="portfolio-row">
-        <div class="portfolio-container">
-          <div class="portfolio-date-location"><h4>Date</h4><h4>Location</h4></div>
-          <div><img src="images/ClaireKuo_IconforAwarenessMockup.jpg" class="mockup" alt="Icon for Awareness"/></div>
-          <div class="portfolio-content">
-          <div class="portfolio-title"><h4>title</h4></div>
-          <div class="portfolio-description"><p2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac orci nec velit sagittis euismod quis non purus. Aliquam vel volutpat enim. Nulla sollicitudin ligula ac gravida finibus. Vestibulum enim metus, consequat sit amet maximus at, convallis posuere enim.</p2></div>
-          </div>
-        </div>
-        <div class="portfolio-container">
-          <div class="portfolio-date-location"><h4>Date</h4><h4>Location</h4></div>
-          <div ><img src="images/Square_Book_Mockup.png" class="mockup" alt="Typography Fundamentals Book"/></div>
-          <div class="portfolio-content">
-          <div class="portfolio-title"><h4>title</h4></div>
-          <div class="portfolio-description"><p2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac orci nec velit sagittis euismod quis non purus. Aliquam vel volutpat enim. Nulla sollicitudin ligula ac gravida finibus. Vestibulum enim metus, consequat sit amet maximus at, convallis posuere enim.</p2></div>
-          </div>
-        </div>
-      </div>
-      <div class="portfolio-row">
-        <div class="portfolio-container">
-          <div class="portfolio-date-location"><h4>Date</h4><h4>Location</h4></div>
-          <div><img  src="images/T-Shirt mockup.png" class="mockup" alt="Bamboozled T-Shirt"/></div>
-          <div class="portfolio-content">
-          <div class="portfolio-title"><h4> title</h4></div>
-          <div class="portfolio-description"><p2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac orci nec velit sagittis euismod quis non purus. Aliquam vel volutpat enim. Nulla sollicitudin ligula ac gravida finibus. Vestibulum enim metus, consequat sit amet maximus at, convallis posuere enim.</p2></div>
-          </div>
-        </div>
-        <div class="portfolio-container">
-          <div class="portfolio-date-location"><h4>Date</h4><h4>Location</h4></div>
-          <div><img src="images/Skolos&Wedell.png" class="mockup" alt="Skolos & Wedell"/></div>
-          <div class="portfolio-content">
-          <div class="portfolio-title"><h4>title</h4></div>
-          <div class="portfolio-description"><p2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac orci nec velit sagittis euismod quis non purus. Aliquam vel volutpat enim. Nulla sollicitudin ligula ac gravida finibus. Vestibulum enim metus, consequat sit amet maximus at, convallis posuere enim.</p2></div>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
-      <div class="centered-button-div"><button class="button-primary" onclick="seemore">See More</button></div>
 </section>
 
-<!-- Testimonials Section -->  
+<!-- Skills Section -->
+<section id="experience">
+    <div class="container">
+        <div><img alt="Experience" class="image" src="images/Portfolio_Experience.png"/></div>
+        <div class="subheading"><h2>Postcards of my experiences and skillset. Click to flip through!</h2></div>
+        <div class="experience-card-column" >
+            <div class="experience-card">
+                <div class="experience-card-content">
+                    <div class="experience-card-date-location">
+                        <div class="date">March 21, 2024</div>
+                        <div class="location">San Diego, CA</div>
+                    </div>
+                    <div class="experience-card-title">
+                        <h4>Company title</h4>
+                        <p1>UI intern</p1>
+                    </div>
+                    <div class="experience-card-description">
+                        <ul>
+                            <li>Skill 1</li>
+                            <li>Skill 2</li>
+                            <li>Skill 3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="experience-card">
+                <div class="experience-card-content">
+                    <div class="experience-card-date-location">
+                        <div class="date">March 21, 2024</div>
+                        <div class="location">San Diego, CA</div>
+                    </div>
+                    <div class="experience-card-title">
+                        <h4>Company title</h4>
+                        <p1>UI intern</p1>
+                    </div>
+                    <div class="experience-card-description">
+                        <ul>
+                            <li>Skill 1</li>
+                            <li>Skill 2</li>
+                            <li>Skill 3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="experience-card">
+                <div class="experience-card-content">
+                    <div class="experience-card-date-location">
+                        <div class="date">March 21, 2024</div>
+                        <div class="location">San Diego, CA</div>
+                    </div>
+                    <div class="experience-card-title">
+                        <h4>Company title</h4>
+                        <p1>UI intern</p1>
+                    </div>
+                    <div class="experience-card-description">
+                        <ul>
+                            <li>Skill 1</li>
+                            <li>Skill 2</li>
+                            <li>Skill 3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="centered-button-div"><input class="button-secondary" type="Download" value="Download Resume"></div>
+
+</section>
+
+<!-- Gallery Section -->
+<section id="portfolio">
+    <div class="container">
+        <div><img alt="Portfolio" class="image" src="images/Portfolio_Portfolio.png"/></div>
+        <div class="subheading"><h2>Here is my collection of all my work, hope you enjoy. Have any questions or want to
+            connect? contact me below!</h2></div>
+        <div class="portfolio-gallery">
+            <div class="portfolio-row">
+                <div class="portfolio-container">
+                    <div class="portfolio-date-location"><h4>Date</h4><h4>Location</h4></div>
+                    <div><img alt="High School Conference Poster" class="mockup"
+                              src="images/APSASDSU_HSC_Postermockup.png"/></div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-title"><h4>title</h4></div>
+                        <div class="portfolio-description">
+                            <p2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac orci nec velit
+                                sagittis euismod quis non purus. Aliquam vel volutpat enim. Nulla sollicitudin ligula ac
+                                gravida finibus. Vestibulum enim metus, consequat sit amet maximus at, convallis posuere
+                                enim.
+                            </p2>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-container">
+                    <div class="portfolio-date-location"><h4>Date</h4><h4>Location</h4></div>
+                    <div><img alt="penguin book cover" class="mockup" src="images/bookcoverfinal_mockup.PNG"/></div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-title"><h4>title</h4></div>
+                        <div class="portfolio-description">
+                            <p2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac orci nec velit
+                                sagittis euismod quis non purus. Aliquam vel volutpat enim. Nulla sollicitudin ligula ac
+                                gravida finibus. Vestibulum enim metus, consequat sit amet maximus at, convallis posuere
+                                enim.
+                            </p2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-row">
+                <div class="portfolio-container">
+                    <div class="portfolio-date-location"><h4>Date</h4><h4>Location</h4></div>
+                    <div><img alt="Mailroom Software UI Design" class="mockup" src="images/Mailroom Mockup.png"/></div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-title"><h4>title</h4></div>
+                        <div class="portfolio-description">
+                            <p2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac orci nec velit
+                                sagittis euismod quis non purus. Aliquam vel volutpat enim. Nulla sollicitudin ligula ac
+                                gravida finibus. Vestibulum enim metus, consequat sit amet maximus at, convallis posuere
+                                enim.
+                            </p2>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-container">
+                    <div class="portfolio-date-location"><h4>Date</h4><h4>Location</h4></div>
+                    <div><img alt="Shopping Bag" class="mockup" src="images/Shopping_Bag_Mockup_guide.png"/></div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-title"><h4>title</h4></div>
+                        <div class="portfolio-description">
+                            <p2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac orci nec velit
+                                sagittis euismod quis non purus. Aliquam vel volutpat enim. Nulla sollicitudin ligula ac
+                                gravida finibus. Vestibulum enim metus, consequat sit amet maximus at, convallis posuere
+                                enim.
+                            </p2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-row">
+                <div class="portfolio-container">
+                    <div class="portfolio-date-location"><h4>Date</h4><h4>Location</h4></div>
+                    <div><img alt="Icon for Awareness" class="mockup"
+                              src="images/ClaireKuo_IconforAwarenessMockup.jpg"/></div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-title"><h4>title</h4></div>
+                        <div class="portfolio-description">
+                            <p2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac orci nec velit
+                                sagittis euismod quis non purus. Aliquam vel volutpat enim. Nulla sollicitudin ligula ac
+                                gravida finibus. Vestibulum enim metus, consequat sit amet maximus at, convallis posuere
+                                enim.
+                            </p2>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-container">
+                    <div class="portfolio-date-location"><h4>Date</h4><h4>Location</h4></div>
+                    <div><img alt="Typography Fundamentals Book" class="mockup" src="images/Square_Book_Mockup.png"/>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-title"><h4>title</h4></div>
+                        <div class="portfolio-description">
+                            <p2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac orci nec velit
+                                sagittis euismod quis non purus. Aliquam vel volutpat enim. Nulla sollicitudin ligula ac
+                                gravida finibus. Vestibulum enim metus, consequat sit amet maximus at, convallis posuere
+                                enim.
+                            </p2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-row">
+                <div class="portfolio-container">
+                    <div class="portfolio-date-location"><h4>Date</h4><h4>Location</h4></div>
+                    <div><img alt="Bamboozled T-Shirt" class="mockup" src="images/T-Shirt mockup.png"/></div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-title"><h4> title</h4></div>
+                        <div class="portfolio-description">
+                            <p2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac orci nec velit
+                                sagittis euismod quis non purus. Aliquam vel volutpat enim. Nulla sollicitudin ligula ac
+                                gravida finibus. Vestibulum enim metus, consequat sit amet maximus at, convallis posuere
+                                enim.
+                            </p2>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-container">
+                    <div class="portfolio-date-location"><h4>Date</h4><h4>Location</h4></div>
+                    <div><img alt="Skolos & Wedell" class="mockup" src="images/Skolos&Wedell.png"/></div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-title"><h4>title</h4></div>
+                        <div class="portfolio-description">
+                            <p2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac orci nec velit
+                                sagittis euismod quis non purus. Aliquam vel volutpat enim. Nulla sollicitudin ligula ac
+                                gravida finibus. Vestibulum enim metus, consequat sit amet maximus at, convallis posuere
+                                enim.
+                            </p2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="centered-button-div">
+        <button class="button-primary" onclick="seemore">See More</button>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
 <section id="faqs">
-  <div class="container">
-    <div class="h1"><h1>FAQs</h1></div>
-    <div class="faq-question-section">
-      <div class="faq-question-answer">
-       <div class="question"><h3>When will you be graduating from SDSU?</h3> </div>
-       <div class="answer"><p>I will graduate in Spring of 2025 with a Graphic Design major and a Marketing minor. See <a class="textto" href="#contact">Experiences</a> for more!</p></div></div>
-      <div class="faq-question-answer">
-        <div class="question"><h3>What do you have planned for after graduation?</h3></div>
-        <div class="answer"><p>After graduation, I plan to in expand into the UI/UX Field. for inquiries about booking me, fill out the <a class="textto" href="#contact">Contacts form.</a></p></div></div>
-      <div class="faq-question-answer">
-        <div class="question"><h3>What was your favorite class you took at SDSU?</h3></div>
-        <div class="answer"><p>My favorite class I have taken is a ceramics class because I got to make mugs and bowls for myself.</p></div></div>
-      <div class="faq-question-answer">
-        <div class="question"><h3>What work are you most proud producing at SDSU?</h3></div>
-        <div class="answer">I’m most proud of my Mailroom App and Backend Software UI design I made during my internship this past summer. Browse through my work in <a class="textto" href="#portfolio">Portfolio.</a></p></div></div>
-    </div>
+    <div class="container">
+        <div class="h1"><h1>FAQs</h1></div>
+        <div class="faq-question-section">
+            <div class="faq-question-answer">
+                <div class="question"><h3>When will you be graduating from SDSU?</h3></div>
+                <div class="answer"><p>I will graduate in Spring of 2025 with a Graphic Design major and a Marketing
+                    minor. See <a class="textto" href="#contact">Experiences</a> for more!</p></div>
+            </div>
+            <div class="faq-question-answer">
+                <div class="question"><h3>What do you have planned for after graduation?</h3></div>
+                <div class="answer"><p>After graduation, I plan to in expand into the UI/UX Field. for inquiries about
+                    booking me, fill out the <a class="textto" href="#contact">Contacts form.</a></p></div>
+            </div>
+            <div class="faq-question-answer">
+                <div class="question"><h3>What was your favorite class you took at SDSU?</h3></div>
+                <div class="answer"><p>My favorite class I have taken is a ceramics class because I got to make mugs and
+                    bowls for myself.</p></div>
+            </div>
+            <div class="faq-question-answer">
+                <div class="question"><h3>What work are you most proud producing at SDSU?</h3></div>
+                <div class="answer">I’m most proud of my Mailroom App and Backend Software UI design I made during my
+                    internship this past summer. Browse through my work in <a class="textto" href="#portfolio">Portfolio.</a></p>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
-<!-- Contact Section -->  
+<!-- Contact Section -->
 <section id="contact" style="display: flex; justify-content:center;">
-  <div class="contact-container" style="width: 960px;">
-    <div><img src="images/Portfolio_Contact.png" class="image" alt="contact"/></div>
-    <div class="subheading"><h2>For any media-related inquires, design commissions, or collaborations, please email at kuoclaire0@gmail.com, fill out the form down below, or reach out via IG.</h2></div>
-    <form>
-    <div class="contact-form"></div>
-      <div class="contact-section">
-        <label for="contact-input-title">First & Last name</label>
-        <input class="contact-input-form" type="ex:Jane Doe">
-      </div>
-      <div class="contact-section">
-        <label for="contact-input-title">Email Address</label>
-        <input class="contact-input-form" type="Email">
-      </div>
-      <div class="contact-section">
-        <label for="contact-input-title">Subject</label>
-        <input class="contact-input-form" type="Subject">
-      </div>
-      <div class="contact-section">
-        <label for="contact-input-title">Leave a message!</label>
-        <textarea class="contact-input-large-form"></textarea> 
-      </div>
-      <div class="centered-button-div"><input class="button-secondary" type="submit" value="Submit"></div>
+    <div class="contact-container" style="width: 960px;">
+        <div><img alt="contact" class="image" src="images/Portfolio_Contact.png"/></div>
+        <div class="subheading"><h2>For any media-related inquires, design commissions, or collaborations, please email
+            at kuoclaire0@gmail.com, fill out the form down below, or reach out via IG.</h2></div>
+        <form>
+            <div class="contact-form"></div>
+            <div class="contact-section">
+                <label for="contact-input-title">First & Last name</label>
+                <input class="contact-input-form" type="ex:Jane Doe">
+            </div>
+            <div class="contact-section">
+                <label for="contact-input-title">Email Address</label>
+                <input class="contact-input-form" type="Email">
+            </div>
+            <div class="contact-section">
+                <label for="contact-input-title">Subject</label>
+                <input class="contact-input-form" type="Subject">
+            </div>
+            <div class="contact-section">
+                <label for="contact-input-title">Leave a message!</label>
+                <textarea class="contact-input-large-form"></textarea>
+            </div>
+            <div class="centered-button-div"><input class="button-secondary" type="submit" value="Submit"></div>
     </div>
     </form>
-  </div>
+    </div>
 </section>
 
-<!-- Footer Section -->  
+<!-- Footer Section -->
 <footer>
-  <div class="container">
-    <div class="footer">
-      <div class="footer-content">
-      <nav>
-        <ul class="footer-links"> 
-          <li><a class="footerlink" href="#header">Home</a></li>
-          <li><a class="footerlink" href="#about">About</a></li>
-          <li><a class="footerlink" href="#experience">Experience</a></li>
-          <li><a class="footerlink" href="#portfolio">Portfolio</a></li>
-          <li><a class="footerlink" href="#faqs">FAQs</a></li>
-          <li><a class="footerlink" href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="social-media-links">
-        <div><img  src="images/Linkedin_LM.png" class="social_media" alt="Linkedin"/></div>
-        <div><img src="images/Instagram_LM.png" class="social_media" alt="Instagram"/></div>
-        <div><img  src="images/Pinterest_LM.png" class="social_media" alt="Pinterest"/></div>
-      </div>
-    </div>
-  <img class="footer-logo" src="images/Logo.png" alt="logo"> 
-  <div class="copyright"><p>Copyright © 2024, All Rights Reserved</p> </div>
-  </div>
+    <div class="container">
+        <div class="footer">
+            <div class="footer-content">
+                <nav>
+                    <ul class="footer-links">
+                        <li><a class="footerlink" href="#header">Home</a></li>
+                        <li><a class="footerlink" href="#about">About</a></li>
+                        <li><a class="footerlink" href="#experience">Experience</a></li>
+                        <li><a class="footerlink" href="#portfolio">Portfolio</a></li>
+                        <li><a class="footerlink" href="#faqs">FAQs</a></li>
+                        <li><a class="footerlink" href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="social-media-links">
+                    <div><img alt="Linkedin" class="social_media" src="images/Linkedin_LM.png"/></div>
+                    <div><img alt="Instagram" class="social_media" src="images/Instagram_LM.png"/></div>
+                    <div><img alt="Pinterest" class="social_media" src="images/Pinterest_LM.png"/></div>
+                </div>
+            </div>
+            <img alt="logo" class="footer-logo" src="images/Logo.png">
+            <div class="copyright"><p>Copyright © 2024, All Rights Reserved</p></div>
+        </div>
 </footer>
 <script>
-  function myMenu() {
-    document.getElementById("mymenu").classList.toggle("open");
-    document.getElementById('menuButton').classList.toggle('close');
-  }
+    function myMenu() {
+        document.getElementById("mymenu").classList.toggle("open");
+        document.getElementById('menuButton').classList.toggle('close');
+    }
 </script>
 <script src="script.js"></script>
 </body>
-</html
+</html>

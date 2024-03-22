@@ -7,7 +7,7 @@
     --color-dark-blue: #30444a;
     --color-brown: #59554c;
     --display-font-family: "Averia Serif Libre", serif;
-    ---font-family: 'Georgia', sans-serif;
+    --font-family: 'Georgia', sans-serif;
     --base-font-size: 16px;
 }
 body {
@@ -21,10 +21,7 @@ body {
     /*font: inherit;*/
     vertical-align:middle;
     z-index: 2;
-}
-.stickers {
     background-image: url("images/background_stickers.png");
-    z-index: 2;
     background-size: 100%;
 }
 .button-primary {
@@ -77,7 +74,7 @@ body {
     background-color: var(--color-dark-blue);
     z-index:998;
     box-shadow: 0 0px 12px rgba(0, 0, 0, 0.1);
-    height:100%;
+    height:auto;
     width:150px;
     transition: all 300ms;
 }
@@ -104,6 +101,21 @@ body {
     z-index: 999;
 }
 /*images */
+.decor{
+    opacity: 60%;
+    z-index: 0;
+    transform: scale(0.7);
+    position: absolute;
+}
+/* .butterfly{
+    max-width: 150px;
+    height:auto;
+    position: relative;
+    left: 1350%;
+    top: 200%;
+    transform: rotate(15deg);
+
+} */
 
 /*font */
 .h1{
@@ -171,10 +183,6 @@ body {
     font: inherit;
     vertical-align: baseline;
     background-color:#F4EFE6;
-    vertical-align:middle;
-    z-index: 2;
-    background-image: url("images/background_stickers.png");
-    background-size: 100%;
 }
 /*header/logo */
 .logo {
@@ -236,6 +244,17 @@ section#header {
 }
 
 /*about */
+.aboutme-paragraph {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+.aboutme-header h3, .aboutme-paragraph p {
+    margin: 0;
+    padding: 0;
+}
+
 
 .container {
     width: 100%;
@@ -246,7 +265,7 @@ section#header {
 }
 .aboutme-header {
     text-align: center;
-    font-family: var( --display-font-family);
+    font-family: var(--display-font-family);
     font-weight: 400;
     font-style: normal;
     font-size: 200%;
@@ -256,29 +275,24 @@ section#header {
 .aboutme-paragraph {
     color: var(--color-dark-blue);
     font-family: var(--font-family);
-    display: flex;
     justify-content: left;
     margin-left: auto;
     margin-right: auto;
     text-align: left;
-    width: 650px;
-    height: 456px;
+    max-width: 650px;
+    width: 100%;
+    height: auto;
     font-size: 28px;
     line-height: 124%;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
 }
 
 .aboutme {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 650px;
-    height: 456px;
-    flex:auto;
     padding: 5%;
 }
+
 section#about {
     background-image: url('images/Ripped Paper_1.png');
     background-repeat: no-repeat;
@@ -392,9 +406,6 @@ section#experience{
     flex-grow: 0;
     padding-top: 10px;
     padding-bottom: 10px;
-    display: flex;
-    align-items: flex-start;
-
 }
 /*portfolio */
 .container{
@@ -426,7 +437,6 @@ section#experience{
 .portfolio-title {
     font-family: "Averia Serif Libre", serif;
     font-weight: 300;
-    font-style: bold;
     font-size: 130%;
     color: #30444A;
     display: flex;
@@ -451,7 +461,6 @@ section#experience{
     margin-right: auto;
     width: 360px;
     height: 360px;
-    aspect-ratio: 1/1;
     object-fit: cover;
     border-radius: 10px;
 }
@@ -499,7 +508,7 @@ section#experience{
     padding-right: 10%;
     padding: 2%;
     font-size: 120%;
-    font-family: var(---font-family);
+    font-family: var(--font-family);
     color: var(--color-dark-blue);
 }
 .faq-question-answer{
@@ -511,8 +520,7 @@ section#experience{
   justify-content: center;
 }
 .contact-form{
-margin-top: 5%;
-margin-bottom: 5%;
+margin: 5%;
 }
 .contact-section {
     display: flex;
@@ -583,7 +591,7 @@ textarea{
 }
 .social_media {
     max-width:50px;
-    max-height:auto;
+    /*max-height: auto;*/
 }
 footer {
     background-color: #8EA2A6;
@@ -609,9 +617,15 @@ a.footerlink {
     font-size: 18px;
     font-style:italic;
     color: var(--color-dark-blue);
-    font-family: var(---font-family);
+    font-family: var(--font-family);
 }
 .container{
     margin-top: 10%;
     margin-bottom: 10%;
+}
+
+.stickers {
+    background-image: url("images/background_stickers.png");
+    z-index: 2;
+    background-size: 100%;
 }
