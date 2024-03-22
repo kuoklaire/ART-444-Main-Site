@@ -1,25 +1,207 @@
 /* TABLET VIEW */
 @media only screen and (max-width:768px) {
-.body{
-    font-size: 80%;
-}
-.container{
-    align-content: center;
-    height: 60vh;
-}
+    /* images/button  */
+    .decor {
+        display:none;
+    }
+    .button-primary {
+        padding: 25px 40px 25px 40px;
+        font-size: 28px;
+    }
+    .button-secondary {
+        padding: 25px 40px 25px 40px;
+        font-size: 28px;
+    }
+    .image {
+        max-width: 600px;
+    }
+    .body{
+        font-size: 80%;
+    }
+    .container{
+        align-content: center;
+    }   
+    #header{
+        margin-top: 40%;
+        margin-bottom: 10%;
+        }
+    section#about {
+        background-size: 768px 1100px;
+        }
+    .aboutme-header {
+        font-size: 200%;
+        margin: 0;
+    }
+    .aboutme-paragraph {
+     margin-left: 10px;
+     margin-right: 20px;
+    }
+
+    /*Experience*/
+    .experience-card-column {
+        flex-direction: column;
+        align-items: center;
+    }
+    .experience-card{
+        max-width: 380px;
+    }
+    /*Portfolio*/
+    .mockup {
+        width: 350px;
+        height: auto;
+    }
+    .portfolio-description {
+        width: 350px;
+    }
+    .portfolio-row{
+        flex-direction: column;
+    }
+    .portfolio-gallery {
+        grid-template-columns: repeat(1, 1fr);
+        gap /* Set one card per row /
+        gap: 30px; / Adjust gap as needed */
+    }
+    /*contact*/
+    .contact-section {
+        max-width: 380px;
+    }
+    label{
+        font-size: 18px;
+    }
+    /*footer*/
+    .footer-content{
+        display: flex;
+        flex-direction: column;
+    }
+    a.footerlink {
+        font-size: 20px;
+    }
+    .footer-logo{
+        width: 300px;
+        height: auto;
+    }
+    .copyright {
+        font-size: 14px;
+    }
+    .social_media {
+        max-width:50px;
+    }
+
 }
 
 /* MOBILE VIEW */
 @media only screen and (max-width: 390px) {
-    .body{
-        font-size: 60%;
+    .image {
+        width: 320px;
     }
-    .welcome {
-    max-width: 80%;
- }
-.menu {
- top: px;
- left: 21px;
+    #header {
+        margin-top: 80%;
+        margin-bottom: 80%;
+    }
+    .subheading {
+        font-size: 16px;
+        width: 320px;
+    }
+
+ 
+    .continer {
+        align-items: center;
+    }
+
+    .menu {
+    top: px;
+    left: 21px;
+    }
+    .button-primary {
+        padding: 30px;
+        padding-left: 45px;
+        padding-right: 45px;
+        font-size: 24px;
+    }
+    .button-secondary {
+        padding: 30px;
+        padding-left: 40px;
+        padding-right: 40px;
+        font-size: 24px;
+    }
+    /*About*/
+    #about {
+        font-size: 20px;
+    }
+    /*experience*/
+    .experience-card {
+        width: 340px;
+    } 
+    /*Portfolio*/
+    .portfolio-title {
+        font-size: 20px;
+    }
+    .portfolio-description {
+        font-size: 20px;
+    }
+    .portfolio-date-location h4 {
+        font-size: 20px;
+    }
+    .mockup {
+        width: 200px;
+        height: 200px;
+        height: auto;
+    }
+    /*FAQs*/
+    .question{
+        font-size: 20px;
+    }
+    .answer {
+        padding: 5%;
+    }
+    /*Contact*/
+    label{
+        font-size: 20px;
+    }
+    input{
+        font-size: 18px;
+    }
+    .mockup {
+      width: 350px;
+       height: auto;
+     }
+    .portfolio-description {
+        width: 350px;
+     }
+     .portfolio-row{
+        flex-direction: column;
+     }
+    .contact-section {
+        max-width: 300px;
+     }
+    /*footer*/
+    .copyright {
+        font-size: 12px;
+    }
+    .social_media {
+        width:45px;
+    }
+    .social-media-links {
+        margin-left: 30%;
+    }
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        align-items: flex-start;
+    }
+    .footer-content{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 20%;
+    }
+    .aboutme, .aboutme-paragraph {
+        width: calc(100% - 10%);
+        margin: 0 auto;
+    }
+    .aboutme-paragraph {
+        font-size: 24px;
     }
 
 }
