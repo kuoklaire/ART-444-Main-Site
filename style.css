@@ -74,7 +74,7 @@ body {
     background-color: var(--color-dark-blue);
     z-index:998;
     box-shadow: 0 0px 12px rgba(0, 0, 0, 0.1);
-    height:auto;
+    height: 100%;
     width:150px;
     transition: all 300ms;
 }
@@ -100,6 +100,9 @@ body {
     border-radius: 50%;
     z-index: 999;
 }
+html {
+    scroll-behavior: smooth;
+}
 /*images */
 .decor{
     opacity: 60%;
@@ -107,15 +110,6 @@ body {
     transform: scale(0.7);
     position: absolute;
 }
-/* .butterfly{
-    max-width: 150px;
-    height:auto;
-    position: relative;
-    left: 1350%;
-    top: 200%;
-    transform: rotate(15deg);
-
-} */
 
 /*font */
 .h1{

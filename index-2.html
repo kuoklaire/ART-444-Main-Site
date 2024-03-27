@@ -11,52 +11,20 @@
           rel="stylesheet">
 </head>
 <body>
-<!--  <div class="decor">-->
-<!--    <div class="butterfly">-->
-<!--      <img src="images/Portfolio_butterfly.png" alt="butterfly" width="150px">-->
-<!--    </div>-->
-<!--    <div class="cherry">-->
-<!--      <img src="images/Portfolio_cherry.png" alt="cherry" width="150px">-->
-<!--    </div>-->
-<!--    <div class="flower">-->
-<!--      <img src="images/Portfolio_flower.png" alt="flower" width="150px">-->
-<!--    </div>-->
-<!--    <div class="star">-->
-<!--      <img src="images/Portfolio_star.png" alt="star" width="150px">-->
-<!--    </div>-->
-<!--    <div class="bow">-->
-<!--      <img src="images/Portfolio_bow.png" alt="bow"width="150px">-->
-<!--    </div>-->
-<!--  </div>-->
-
 
 <!-- Main Navigation -->
-<!--<div id="background-image" style="height: 200px; background-image: url('images/Ripped Paper_1.png'); z-index: 1">-->
-<!--</div>-->
 <header class="header">
     <div><img alt="logo" class="logo" src="images/Logo.png"></div>
-    <!-- <div class="main-nav">
-        <nav>
-            <ul class="nav-links">
-                <li><a class="main-nav-links" href="#header">Home</a></li>
-                <li><a class="main-nav-links" href="#about">About</a></li>
-                <li><a class="main-nav-links" href="#experience">Experience</a></li>
-                <li><a class="main-nav-links" href="#portfolio">Portfolio</a></li>
-                <li><a class="main-nav-links" href="#faqs">FAQs</a></li>
-                <li><a class="main-nav-links" href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </div> -->
 </header>
 <div class="menu" id="menuButton" onclick="myMenu()"></div>
 <div class="mobile-menu-popout" id="mymenu">
     <ul class="mobile-nav-links">
-        <li><a class="main-nav-links" href="#header">Home</a></li>
-        <li><a class="main-nav-links" href="#about">About</a></li>
-        <li><a class="main-nav-links" href="#experience">Experience</a></li>
-        <li><a class="main-nav-links" href="#portfolio">Portfolio</a></li>
-        <li><a class="main-nav-links" href="#faqs">FAQs</a></li>
-        <li><a class="main-nav-links" href="#contact">Contact</a></li>
+        <li><a class="main-nav-links" id="mymenu-link" onclick="myMenuLinks()" href="#header">Home</a></li>
+        <li><a class="main-nav-links" id="mymenu-link" onclick="myMenuLinks()" href="#about">About</a></li>
+        <li><a class="main-nav-links" id="mymenu-link" onclick="myMenuLinks()" href="#experience">Experience</a></li>
+        <li><a class="main-nav-links" id="mymenu-link" onclick="myMenuLinks()" href="#portfolio">Portfolio</a></li>
+        <li><a class="main-nav-links" id="mymenu-link" onclick="myMenuLinks()" href="#faqs">FAQs</a></li>
+        <li><a class="main-nav-links" id="mymenu-link" onclick="myMenuLinks()" href="#contact">Contact</a></li>
     </ul>
 </div>
 
@@ -381,6 +349,11 @@
         document.getElementById("mymenu").classList.toggle("open");
         document.getElementById('menuButton').classList.toggle('close');
     }
+    function myMenuLinks() {
+        document.getElementById("mymenu").classList.remove("open");
+        document.getElementById('menuButton').classList.remove('close');
+    }
+
 </script>
 <script src="script.js"></script>
 </body>
