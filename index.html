@@ -9,6 +9,7 @@
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
           rel="stylesheet">
+          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 <body>
 
@@ -16,18 +17,22 @@
 <header class="header">
     <div><img alt="logo" class="logo" src="images/Logo.png"></div>
 </header>
+
 <div class="menu" id="menuButton" onclick="myMenu()"></div>
 <div class="mobile-menu-popout" id="mymenu">
     <ul class="mobile-nav-links">
-        <li><a class="main-nav-links" id="mymenu-link" onclick="myMenuLinks()" href="#header">Home</a></li>
-        <li><a class="main-nav-links" id="mymenu-link" onclick="myMenuLinks()" href="#about">About</a></li>
-        <li><a class="main-nav-links" id="mymenu-link" onclick="myMenuLinks()" href="#experience">Experience</a></li>
-        <li><a class="main-nav-links" id="mymenu-link" onclick="myMenuLinks()" href="#portfolio">Portfolio</a></li>
-        <li><a class="main-nav-links" id="mymenu-link" onclick="myMenuLinks()" href="#faqs">FAQs</a></li>
-        <li><a class="main-nav-links" id="mymenu-link" onclick="myMenuLinks()" href="#contact">Contact</a></li>
+        <li><a class="main-nav-links" onclick="myMenuLinks()" href="#header">Home</a></li>
+        <li><a class="main-nav-links" onclick="myMenuLinks()" href="#about">About</a></li>
+        <li><a class="main-nav-links" onclick="myMenuLinks()" href="#experience">Experience</a></li>
+        <li><a class="main-nav-links" onclick="myMenuLinks()" href="#portfolio">Portfolio</a></li>
+        <li><a class="main-nav-links" onclick="myMenuLinks()" href="#faqs">FAQs</a></li>
+        <li><a class="main-nav-links" onclick="myMenuLinks()" href="#contact">Contact</a></li>
     </ul>
+    <div class="dark-mode">
+        <div class="dark-mode-title"><h4>Dark mode</h4></div>
+        <div class="LMbutton" id="lmbutton" onclick="lmButton()"></div>
+    </div>
 </div>
-
 <!-- Main Header -->
 <section class="header" id="header">
     <div><img alt="Welcome" class="welcome" src="images/Portfolio_Welcome.png"/></div>
@@ -63,18 +68,18 @@
             <div class="experience-card">
                 <div class="experience-card-content">
                     <div class="experience-card-date-location">
-                        <div class="date">March 21, 2024</div>
+                        <div class="date">Feburary, 2025-Present</div>
                         <div class="location">San Diego, CA</div>
                     </div>
                     <div class="experience-card-title">
-                        <h4>Company title</h4>
+                        <h4>Project BIONET</h4>
                         <p1>UI intern</p1>
                     </div>
                     <div class="experience-card-description">
                         <ul>
-                            <li>Skill 1</li>
-                            <li>Skill 2</li>
-                            <li>Skill 3</li>
+                            <li>Collaborative </li>
+                            <li>Takes initiative</li>
+                            <li>Proficient in Adobe suite </li>
                         </ul>
                     </div>
                 </div>
@@ -86,14 +91,14 @@
                         <div class="location">San Diego, CA</div>
                     </div>
                     <div class="experience-card-title">
-                        <h4>Company title</h4>
+                        <h4>BOX Digital LLC.</h4>
                         <p1>UI intern</p1>
                     </div>
                     <div class="experience-card-description">
                         <ul>
-                            <li>Skill 1</li>
-                            <li>Skill 2</li>
-                            <li>Skill 3</li>
+                            <li>Proficient in Figma/li>
+                            <li>html/CSS/Javascript</li>
+                            <li>Microsoft Excel</li>
                         </ul>
                     </div>
                 </div>
@@ -105,20 +110,20 @@
                         <div class="location">San Diego, CA</div>
                     </div>
                     <div class="experience-card-title">
-                        <h4>Company title</h4>
-                        <p1>UI intern</p1>
+                        <h4>SDSU APSA</h4>
+                        <p1>Executive Board Member</p1>
                     </div>
                     <div class="experience-card-description">
                         <ul>
-                            <li>Skill 1</li>
-                            <li>Skill 2</li>
-                            <li>Skill 3</li>
+                            <li>Active communication skills</li>
+                            <li>Graphic Design</li>
+                            <li></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="centered-button-div"><input class="button-secondary" type="Download" value="Download Resume"></div>
+        <div class="centered-button-div"><a class="button-secondary" target="_blank" herf="Claire-Kuo-Resume-2024">Download Resume</a></div>
 
 </section>
 
@@ -135,7 +140,7 @@
                     <div><img alt="High School Conference Poster" class="mockup"
                               src="images/APSASDSU_HSC_Postermockup.png"/></div>
                     <div class="portfolio-content">
-                        <div class="portfolio-title"><h4>title</h4></div>
+                        <div class="portfolio-title"><h4>High School Conference Poster Design</h4></div>
                         <div class="portfolio-description">
                             <p2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac orci nec velit
                                 sagittis euismod quis non purus. Aliquam vel volutpat enim. Nulla sollicitudin ligula ac
@@ -149,7 +154,7 @@
                     <div class="portfolio-date-location"><h4>Date</h4><h4>Location</h4></div>
                     <div><img alt="penguin book cover" class="mockup" src="images/bookcoverfinal_mockup.PNG"/></div>
                     <div class="portfolio-content">
-                        <div class="portfolio-title"><h4>title</h4></div>
+                        <div class="portfolio-title"><h4>Mailroom Backend Software Design</h4></div>
                         <div class="portfolio-description">
                             <p2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac orci nec velit
                                 sagittis euismod quis non purus. Aliquam vel volutpat enim. Nulla sollicitudin ligula ac
@@ -165,7 +170,7 @@
                     <div class="portfolio-date-location"><h4>Date</h4><h4>Location</h4></div>
                     <div><img alt="Mailroom Software UI Design" class="mockup" src="images/Mailroom Mockup.png"/></div>
                     <div class="portfolio-content">
-                        <div class="portfolio-title"><h4>title</h4></div>
+                        <div class="portfolio-title"><h4>Peguin Book Re-Design</h4></div>
                         <div class="portfolio-description">
                             <p2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac orci nec velit
                                 sagittis euismod quis non purus. Aliquam vel volutpat enim. Nulla sollicitudin ligula ac
@@ -179,7 +184,7 @@
                     <div class="portfolio-date-location"><h4>Date</h4><h4>Location</h4></div>
                     <div><img alt="Shopping Bag" class="mockup" src="images/Shopping_Bag_Mockup_guide.png"/></div>
                     <div class="portfolio-content">
-                        <div class="portfolio-title"><h4>title</h4></div>
+                        <div class="portfolio-title"><h4>Escape Room Packaging Design</h4></div>
                         <div class="portfolio-description">
                             <p2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac orci nec velit
                                 sagittis euismod quis non purus. Aliquam vel volutpat enim. Nulla sollicitudin ligula ac
@@ -196,7 +201,7 @@
                     <div><img alt="Icon for Awareness" class="mockup"
                               src="images/ClaireKuo_IconforAwarenessMockup.jpg"/></div>
                     <div class="portfolio-content">
-                        <div class="portfolio-title"><h4>title</h4></div>
+                        <div class="portfolio-title"><h4>Campaign for Awareness Poster Design</h4></div>
                         <div class="portfolio-description">
                             <p2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac orci nec velit
                                 sagittis euismod quis non purus. Aliquam vel volutpat enim. Nulla sollicitudin ligula ac
@@ -211,7 +216,7 @@
                     <div><img alt="Typography Fundamentals Book" class="mockup" src="images/Square_Book_Mockup.png"/>
                     </div>
                     <div class="portfolio-content">
-                        <div class="portfolio-title"><h4>title</h4></div>
+                        <div class="portfolio-title"><h4>Bamboozled T-Shirt Design</h4></div>
                         <div class="portfolio-description">
                             <p2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac orci nec velit
                                 sagittis euismod quis non purus. Aliquam vel volutpat enim. Nulla sollicitudin ligula ac
@@ -227,7 +232,7 @@
                     <div class="portfolio-date-location"><h4>Date</h4><h4>Location</h4></div>
                     <div><img alt="Bamboozled T-Shirt" class="mockup" src="images/T-Shirt mockup.png"/></div>
                     <div class="portfolio-content">
-                        <div class="portfolio-title"><h4> title</h4></div>
+                        <div class="portfolio-title"><h4> Type Fundamentals Book</h4></div>
                         <div class="portfolio-description">
                             <p2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac orci nec velit
                                 sagittis euismod quis non purus. Aliquam vel volutpat enim. Nulla sollicitudin ligula ac
@@ -241,7 +246,7 @@
                     <div class="portfolio-date-location"><h4>Date</h4><h4>Location</h4></div>
                     <div><img alt="Skolos & Wedell" class="mockup" src="images/Skolos&Wedell.png"/></div>
                     <div class="portfolio-content">
-                        <div class="portfolio-title"><h4>title</h4></div>
+                        <div class="portfolio-title"><h4>Skolos & Wedell Book design</h4></div>
                         <div class="portfolio-description">
                             <p2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac orci nec velit
                                 sagittis euismod quis non purus. Aliquam vel volutpat enim. Nulla sollicitudin ligula ac
@@ -255,7 +260,7 @@
         </div>
     </div>
     <div class="centered-button-div">
-        <button class="button-primary" onclick="seemore">See More</button>
+        <button class="centered-button-div"><a class="button-primary" target="_blank" herf="">See More</a></div>
     </div>
 </section>
 
@@ -335,9 +340,9 @@
                     </ul>
                 </nav>
                 <div class="social-media-links">
-                    <div><img alt="Linkedin" class="social_media" src="images/Linkedin_LM.png"/></div>
-                    <div><img alt="Instagram" class="social_media" src="images/Instagram_LM.png"/></div>
-                    <div><img alt="Pinterest" class="social_media" src="images/Pinterest_LM.png"/></div>
+                    <div class="social_media_linkedin"></div>
+                    <div class="social_media_Instagram"></div>
+                    <div class="social_media_Pinterest"></div>
                 </div>
             </div>
             <img alt="logo" class="footer-logo" src="images/Logo.png">
@@ -353,7 +358,111 @@
         document.getElementById("mymenu").classList.remove("open");
         document.getElementById('menuButton').classList.remove('close');
     }
+    function lmButton() {
+        document.getElementById("lmbutton").classList.toggle("activated-LMbutton");
+        document.getElementById("mymenu").classList.toggle("darkmode-mobile-menu-popout");
+       
+        const mainnavlinksDark = document.querySelectorAll('.main-nav-links')
+            for (let i = 0; i < mainnavlinksDark.length; i++) {
+                mainnavlinksDark[i].classList.toggle('darkmode-main-nav-links');
+            }
+        const buttonprimaryDark = document.querySelectorAll('.button-primary')
+            for (let i = 0; i < buttonprimaryDark.length; i++) {
+                buttonprimaryDark[i].classList.toggle('darkmode-button-primary');
+            }
+         const subheadingDark = document.querySelectorAll('.subheading')
+            for (let i = 0; i < subheadingDark.length; i++) {
+                subheadingDark[i].classList.toggle('darkmode-subheading');
+            }
+        const experiencecardDark = document.querySelectorAll('.experience-card')
+            for (let i = 0; i < experiencecardDark.length; i++) {
+                experiencecardDark[i].classList.toggle('darkmode-experience-card');
+            }
+        const experiencecarddatelocationDark = document.querySelectorAll('.experience-card-date-location')
+            for (let i = 0; i < experiencecarddatelocationDark.length; i++) {
+                experiencecarddatelocationDark[i].classList.toggle('darkmode-experience-card-date-location');
+            }
+        const portfoliodatelocationDark = document.querySelectorAll('.portfolio-date-location')
+            for (let i = 0; i < portfoliodatelocationDark.length; i++) {
+                portfoliodatelocationDark[i].classList.toggle('darkmode-portfolio-date-location');
+            }
+        const portfoliotitleDark = document.querySelectorAll('.portfolio-title')
+            for (let i = 0; i < portfoliotitleDark.length; i++) {
+                portfoliotitleDark[i].classList.toggle('darkmode-portfolio-title');
+            }
+        const portfoliodescriptionDark = document.querySelectorAll('.portfolio-description')
+            for (let i = 0; i < portfoliodescriptionDark.length; i++) {
+                portfoliodescriptionDark[i].classList.toggle('darkmode-portfolio-description');
+            }
+        const copyrightDark = document.querySelectorAll('.copyright')
+            for (let i = 0; i < copyrightDark.length; i++) {
+                copyrightDark[i].classList.toggle('darkmode-copyright');
+            }
+        const honeDark = document.querySelectorAll('.h1')
+            for (let i = 0; i < honeDark.length; i++) {
+                honeDark[i].classList.toggle('darkmode-h1');
+            }
+        const darkmodetitleDark = document.querySelectorAll('.dark-mode-title')
+            for (let i = 0; i < darkmodetitleDark.length; i++) {
+                darkmodetitleDark[i].classList.toggle('darkmode-dark-mode-title');
+            }
+        const labelDark = document.querySelectorAll('label')
+            for (let i = 0; i < labelDark.length; i++) {
+                labelDark[i].classList.toggle('darkmode-label');
+            }
+        const bodyDark = document.querySelectorAll('body')
+            for (let i = 0; i < bodyDark.length; i++) {
+                bodyDark[i].classList.toggle('darkmode-body');
+            }
+        const sectionheaderDark = document.querySelectorAll('section#header')
+            for (let i = 0; i < sectionheaderDark.length; i++) {
+                sectionheaderDark[i].classList.toggle('darkmode-sectionheader');
+            }
+        const sectionaboutDark = document.querySelectorAll('section#about')
+            for (let i = 0; i < sectionaboutDark.length; i++) {
+                sectionaboutDark[i].classList.toggle('darkmode-sectionabout');
+            }
+        const aboutmeheaderDark = document.querySelectorAll('.aboutme-header')
+            for (let i = 0; i < aboutmeheaderDark.length; i++) {
+                aboutmeheaderDark[i].classList.toggle('darkmode-aboutme-header');
+            }
+        const aboutmedescriptionDark = document.querySelectorAll('.aboutme-paragraph')
+            for (let i = 0; i < aboutmedescriptionDark.length; i++) {
+                aboutmedescriptionDark[i].classList.toggle('darkmode-aboutme-paragraph');
+            }
+        const socialmedialinkedinDark = document.querySelectorAll('.social_media_linkedin')
+            for (let i = 0; i < socialmedialinkedinDark.length; i++) {
+                socialmedialinkedinDark[i].classList.toggle('darkmode-social_media_linkedin');
+            }
+        const socialmediainstagramDark = document.querySelectorAll('.social_media_Instagram')
+            for (let i = 0; i < socialmediainstagramDark.length; i++) {
+                socialmediainstagramDark[i].classList.toggle('darkmode-social_media_Instagram');
+            }
+        const socialmediapinterestDark = document.querySelectorAll('.social_media_Pinterest')
+            for (let i = 0; i < socialmediapinterestDark.length; i++) {
+                socialmediapinterestDark[i].classList.toggle('darkmode-social_media_Pinterest');
+            }
+        const footerlinkDark = document.querySelectorAll('.footerlink')
+            for (let i = 0; i < footerlinkDark.length; i++) {
+                footerlinkDark[i].classList.toggle('darkmode-footerlink');
+            }
+          /* FIX: footer?? maybe */
+           
 
+       
+
+
+        
+        
+  
+        
+    }
+  
+    
+
+   
+
+    
 </script>
 <script src="script.js"></script>
 </body>

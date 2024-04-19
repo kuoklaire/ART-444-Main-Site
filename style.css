@@ -24,6 +24,7 @@ body {
     background-image: url("images/background_stickers.png");
     background-size: 100%;
 }
+
 .button-primary {
     background-color:var(--color-dark-blue);
     color: var(--color-creme);
@@ -37,11 +38,15 @@ body {
     display: flex;
     justify-content: center;
 }
+.darkmode-button-primary {
+    background-color:var(--color-medium-blue) !important;
+    color: var(--color-creme) !important;
+}
 .button-secondary {
     background-color:var(--color-brown);
     color: var(--color-creme);
     font-family: var(--font-family);
-    font-size: 23px;
+    font-size: 20px;
     padding: 15px 30px;
     margin: 5%;
     border: none;
@@ -103,6 +108,7 @@ body {
 html {
     scroll-behavior: smooth;
 }
+
 /*images */
 .decor{
     opacity: 60%;
@@ -117,14 +123,17 @@ html {
     font-style: normal;
     font-weight: 400;
     font-size: 3.5em;
-    color: #30444A;
-    }
+    color: var(--color-dark-blue);
+    } 
+.h2-dark{
+    color: var(--color-creme)!important;
+}
 .h2{
     font-family: var( --display-font-family);
     font-style: normal;
     font-weight: 300;
     font-size: 80%;
-    color: #30444A;
+    color: var(--color-dark-blue);
     text-align: center;
 }
 .h3 {
@@ -132,39 +141,39 @@ html {
     font-style: normal;
     font-weight: 400;
     font-size: 50%;
-    color: #30444A;
+    color: var(--color-dark-blue);
 }
 .h4{
     font-family: var( --display-font-family);
     font-weight: 300;
     font-style: italic;
     font-size: 1.17em;
-    color: #30444A;
+    color: var(--color-dark-blue);
 }
 .p1{
     font-family:var(--font-family);
     font-style: normal;
     font-size: 1.2em;
-    color: #30444A;
+    color: var(--color-dark-blue);
 }
 .p2{
     font-family:var(--font-family);
     font-style: italic;
     font-size: 1em;
-    color: #F4EFE6;
+    color: var(--color-creme);
   }
 .p3 {
     font-family: var(--font-family);
     font-style: normal;
     font-size: .9em;
-    color: #30444A;
+    color: var(--color-dark-blue);
  }
  .subheading {
     font-family: var( --display-font-family);
     font-weight: 400;
     font-style: normal;
     font-size: 100%;
-    color: #30444A;
+    color: var(--color-dark-blue);
     text-align: center;
     margin-left: 5%;
     margin-right: 5%;
@@ -176,7 +185,7 @@ body {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
-    background-color:#F4EFE6;
+    background-color:var(--color-creme);
 }
 /*header/logo */
 .logo {
@@ -205,7 +214,7 @@ margin-bottom: 10%;
     font-style: normal;
     font-weight: 400;
     font-size: 1.225em;
-    color: #30444A;
+    color:var(--color-dark-blue);
     text-decoration: none;
  }
 
@@ -234,16 +243,10 @@ margin-bottom: 10%;
     text-align: center;
 }
 section#header {
-    background-color: var(--main-background-color)
+    background-color: var(--main-background-color);
 }
 
 /*about */
-.aboutme-paragraph {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-}
 .aboutme-header h3, .aboutme-paragraph p {
     margin: 0;
     padding: 0;
@@ -276,7 +279,7 @@ section#header {
     max-width: 650px;
     width: 100%;
     height: auto;
-    font-size: 28px;
+    font-size: 21px;
     line-height: 124%;
 }
 
@@ -333,11 +336,14 @@ section#experience{
     font-weight: 300;
     font-style: normal;
     font-size: 1.04em;
-    color: #30444A;
+    color:var(--color-dark-blue);
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: left;
+}
+.experience-card-title-dark {
+    color:var(--color-creme);
 }
 .experience-card-title p1 {
     font-style: italic;
@@ -347,7 +353,7 @@ section#experience{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: normal;
     font-size: 1em;
-    color: #30444A;
+    color: var(--color-dark-blue);
     flex-wrap: wrap;
     justify-content: left;
     width: 300px;
@@ -361,9 +367,11 @@ section#experience{
     margin: 5px;
     display: flex;
     height:auto;
-    min-height: 300px;
-    width: 600px;
+    width: 100%;
     align-items: flex-start
+}
+.experience-card-dark {
+    background-color:var(--color-medium-blue);
 }
 .experience-card-date-location {
     font-family: "Averia Serif Libre", serif;
@@ -373,9 +381,12 @@ section#experience{
     color: var(--color-creme);
     display: flex;
     flex-direction: row;
-    gap:25%;
     align-self: stretch;
- 
+    gap:12%;
+}
+.location {
+    text-align: right;
+    display: flex;
 }
 
 .experience-card-content {
@@ -432,7 +443,7 @@ section#experience{
     font-family: "Averia Serif Libre", serif;
     font-weight: 300;
     font-size: 130%;
-    color: #30444A;
+    color: var(--color-dark-blue);
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -442,7 +453,7 @@ section#experience{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: normal;
     font-size: 100%;
-    color: #30444A;
+    color: var(--color-dark-blue);
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -572,9 +583,7 @@ textarea{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 7%; height:auto;
-    max-width: 40px;
-    min-width: 40px;
+    height:auto;
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -585,10 +594,10 @@ textarea{
 }
 .social_media {
     max-width:50px;
-    /*max-height: auto;*/
+
 }
 footer {
-    background-color: #8EA2A6;
+    background-color: var(--color-medium-blue);
     background-repeat: no-repeat;
     padding: 1%;
 }
@@ -607,6 +616,25 @@ a.footerlink {
     font-size: 160%;
     color: #30444A;
 }
+.social_media_linkedin {
+    width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    background-image: url(images/Linkedin_LM.png);
+}
+.social_media_Instagram {
+    width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
+    background-image: url(images/Instagram_LM.png);
+}
+.social_media_Pinterest {
+    width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
+    background-image: url(images/Pinterest_LM.png);
+}
 .copyright{
     font-size: 18px;
     font-style:italic;
@@ -622,4 +650,90 @@ a.footerlink {
     background-image: url("images/background_stickers.png");
     z-index: 2;
     background-size: 100%;
+}
+    /*dark mode*/
+.dark-mode-title {
+    color: var(--color-creme);
+    font-style: italic;
+}
+.LMbutton {
+    width: 100px;
+    height: 90px;
+    background-image: url(images/Switch\ DM.svg);
+    background-size: 90px 90px;
+    background-repeat: no-repeat; 
+    z-index: 1;
+    transition: all 300ms;
+}
+.activated-LMbutton {
+    width: 100px;
+    height: 90px;
+    background-image: url(images/Switch\ LM.svg);
+    background-size: 90px 90px;
+    background-repeat: no-repeat; 
+    z-index: 1;
+    transition: all 300ms;
+}
+.darkmode-mobile-menu-popout {
+    background-color: var(--color-creme)!important;
+}
+.darkmode-main-nav-links {
+    color: var(--color-dark-blue) !important;
+}
+.darkmode-experience-card {
+    background-color: var(--color-creme) !important;
+}
+.darkmode-experience-card-date-location {
+    color: var(--color-brown) !important;
+}
+.darkmode-subheading {
+    color: var(--color-creme) !important; 
+}
+.darkmode-dark-mode-title {
+    color: var(--color-brown)!important;
+}
+.darkmode-portfolio-date-location {
+    color: var(--color-light-blue)!important;
+}
+.darkmode-portfolio-title {
+    color: var(--color-creme)!important;
+}
+.darkmode-portfolio-description {
+    color: var(--color-creme)!important;
+}
+.darkmode-label {
+    color: var(--color-creme)!important; 
+}
+.darkmode-copyright {
+    color: var(--color-creme)!important;
+}
+.darkmode-footerlink {
+    color: var(--color-creme)!important;
+}
+.darkmode-h1 {
+    color: var(--color-creme)!important;
+}
+.darkmode-body {
+    background-color: #243136 !important;
+}
+.darkmode-sectionheader {
+    background-color:#243136!important;
+}
+.darkmode-sectionabout {
+    background-image: url('images/Ripped Paper_1DM.png')!important;
+}
+.darkmode-aboutme-header {
+    color: var(--color-creme)!important;
+}
+.darkmode-aboutme-paragraph {
+    color: var(--color-creme)!important;
+}
+.darkmode-social_media_linkedin {
+    background-image: url(images/DM_linkedin.svg);
+}
+.darkmode-social_media_Instagram {
+    background-image: url(images/DM_instagram.svg);
+}
+.darkmode-social_media_Pinterest {
+    background-image: url(images/DM_pinterest.svg);
 }
