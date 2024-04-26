@@ -497,7 +497,7 @@ section#experience{
     border-style: solid;
     border-width: 1px;
     border-radius: 8px 8px 8px 8px;
-    
+
     
 }
 .down-button {
@@ -508,13 +508,16 @@ section#experience{
     background-repeat: no-repeat;
 }
 .up-button {
-    background-image: url(images/up-button.svg); 
+    background-image: url(images/up-button.svg);
+    float: right;
+ 
 }
 
 .faq-open {
     height: auto !important;
     overflow: auto !important;
-    border-radius: 8px 8px 0 0;
+    border-radius: 8px 8px 0 0 !important;
+    transition: max-height 0.3s ease-in !important;
 }
 .question{
     background-color: var(--color-light-blue);
@@ -531,6 +534,7 @@ section#experience{
     justify-content: center;
     align-items: center;
     gap: 20px;
+    
 }
 .answer{
     background-color: var(--color-creme);
@@ -545,6 +549,7 @@ section#experience{
     font-size: 120%;
     font-family: var(--font-family);
     color: var(--color-dark-blue);
+    transition: max-height 0.3s ease-in !important
 }
 .faq-question-answer{
     margin: 5%;

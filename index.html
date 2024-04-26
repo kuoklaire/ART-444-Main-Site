@@ -367,8 +367,7 @@
         faqToggle[i].addEventListener("click", faqOpen);
         }
     function faqOpen () {
-        this.classList.toggle('faq-question-answer');
-        var FAQButton = document.querySelectorAll('.faq-question-answer');
+        var FAQButton = document.querySelectorAll('.faq-open');
         iconDrop = null;
         lastOpened = null;
 
@@ -383,6 +382,8 @@
         if (iconDrop && iconDrop !== icon)
         iconDrop.classlist.remove("up-button");
         iconDrop = icon;
+
+        this.classList.toggle('faq-open');
     }
     
    
