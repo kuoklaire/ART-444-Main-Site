@@ -269,23 +269,34 @@
     <div class="container">
         <div class="h1"><h1>FAQs</h1></div>
         <div class="faq-question-section">
-            <div class="faq-question-answer">
-                <div class="question"><h3>When will you be graduating from SDSU?</h3></div>
+            <div class="faq-question-answer" >
+                <div class="question"><h3>When will you be graduating from SDSU?</h3>
+                    <div class="down-button" id="downButton" onclick="downButton()"></div>
+                </div>
                 <div class="answer"><p>I will graduate in Spring of 2025 with a Graphic Design major and a Marketing
                     minor. See <a class="textto" href="#contact">Experiences</a> for more!</p></div>
             </div>
             <div class="faq-question-answer">
-                <div class="question"><h3>What do you have planned for after graduation?</h3></div>
+                <div class="question">
+                    <h3>What do you have planned for after graduation?</h3>
+                    <div class="down-button"></div>
+                </div>
                 <div class="answer"><p>After graduation, I plan to in expand into the UI/UX Field. for inquiries about
                     booking me, fill out the <a class="textto" href="#contact">Contacts form.</a></p></div>
             </div>
             <div class="faq-question-answer">
-                <div class="question"><h3>What was your favorite class you took at SDSU?</h3></div>
+                <div class="question">
+                    <h3>What was your favorite class you took at SDSU?</h3>
+                    <div class="down-button"></div>
+                </div>
                 <div class="answer"><p>My favorite class I have taken is a ceramics class because I got to make mugs and
                     bowls for myself.</p></div>
             </div>
             <div class="faq-question-answer">
-                <div class="question"><h3>What work are you most proud producing at SDSU?</h3></div>
+                <div class="question">
+                    <h3>What work are you most proud producing at SDSU?</h3>
+                    <div class="down-button"></div>
+                </div>
                 <div class="answer">I’m most proud of my Mailroom App and Backend Software UI design I made during my
                     internship this past summer. Browse through my work in <a class="textto" href="#portfolio">Portfolio.</a></p>
                 </div>
@@ -350,6 +361,31 @@
         </div>
 </footer>
 <script>
+    const faqToggle = document.querySelectorAll('.faq-question-answer');
+
+    for (let i = 0; i < faqToggle.length; i++) {
+        faqToggle[i].addEventListener("click", faqOpen);
+        }
+    function faqOpen () {
+        this.classList.toggle('faq-question-answer');
+        var FAQButton = document.querySelectorAll('.faq-question-answer');
+        iconDrop = null;
+        lastOpened = null;
+
+        var dropCont = this.nextElementSibling;
+        let icon = this.querySelector('.down-button');
+        icon.classList.toggle('up-button');
+
+        if (lastOpened && lastOpened !== dropCont)
+        lastOpened.classList.remove("down-button");
+        lastOpened = dropCont;
+
+        if (iconDrop && iconDrop !== icon)
+        iconDrop.classlist.remove("up-button");
+        iconDrop = icon;
+    }
+    
+   
     function myMenu() {
         document.getElementById("mymenu").classList.toggle("open");
         document.getElementById('menuButton').classList.toggle('close');
@@ -446,17 +482,17 @@
             for (let i = 0; i < footerlinkDark.length; i++) {
                 footerlinkDark[i].classList.toggle('darkmode-footerlink');
             }
-          /* FIX: footer?? maybe */
-           
+    }
+            // function FAQtoggle () {
+            //     document.getElementsByClassName('faq-question-answer')[0].classList.toggle('faq-open');
+            // }
+
+          
 
        
 
 
-        
-        
-  
-        
-    }
+    
   
     
 
