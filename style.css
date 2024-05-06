@@ -326,6 +326,7 @@ section#experience{
     flex: 50%;
     flex-direction: column;
     padding: 0 4px;
+    align-items: center;
   }
 .column img {
     margin-top: 8px;
@@ -356,19 +357,30 @@ section#experience{
     color: var(--color-dark-blue);
     flex-wrap: wrap;
     justify-content: left;
-    width: 300px;
-
+    width: 280px;
+    height: auto;
 }
-.experience-card {
+.experience-card-front:hover > .experience-card-content {
+    cursor: pointer;
+    transform: rotateY('180deg');
+}
+
+.experience-card-front {
     background-color:var(--color-medium-blue);
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 5px;
     display: flex;
-    height:auto;
+    height:360px;
     width: 100%;
-    align-items: flex-start
+    align-items: center;
+    transition: transform 1500ms;
+}
+.experience-card-back {
+    background-image: url(images/Taiwan.jpg);
+    height: 100%;
+    width: 100%;
 }
 .experience-card-dark {
     background-color:var(--color-medium-blue);
@@ -377,12 +389,12 @@ section#experience{
     font-family: "Averia Serif Libre", serif;
     font-weight: 300;
     font-style: italic;
-    font-size: 1em;
+    font-size: 15px;
     color: var(--color-creme);
     display: flex;
     flex-direction: row;
     align-self: stretch;
-    gap:12%;
+    gap:10%;
 }
 .location {
     text-align: right;
@@ -412,6 +424,7 @@ section#experience{
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
 /*portfolio */
 .container{
     justify-content: center;
@@ -508,9 +521,7 @@ section#experience{
     background-repeat: no-repeat;
 }
 .up-button {
-    background-image: url(images/up-button.svg);
-    float: right;
- 
+    transform: rotate(180deg);
 }
 
 .faq-open {
@@ -715,7 +726,7 @@ a.footerlink {
 .darkmode-main-nav-links {
     color: var(--color-dark-blue) !important;
 }
-.darkmode-experience-card {
+.darkmode-experience-card-front {
     background-color: var(--color-creme) !important;
 }
 .darkmode-experience-card-date-location {

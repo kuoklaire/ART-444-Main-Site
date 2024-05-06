@@ -65,10 +65,10 @@
         <div><img alt="Experience" class="image" src="images/Portfolio_Experience.png"/></div>
         <div class="subheading"><h2>Postcards of my experiences and skillset. Click to flip through!</h2></div>
         <div class="experience-card-column" >
-            <div class="experience-card">
+            <div class="experience-card-front">
                 <div class="experience-card-content">
                     <div class="experience-card-date-location">
-                        <div class="date">Feburary, 2025-Present</div>
+                        <div class="date">Feburary, 2024-Present</div>
                         <div class="location">San Diego, CA</div>
                     </div>
                     <div class="experience-card-title">
@@ -77,17 +77,19 @@
                     </div>
                     <div class="experience-card-description">
                         <ul>
-                            <li>Collaborative </li>
-                            <li>Takes initiative</li>
-                            <li>Proficient in Adobe suite </li>
+                            <li>Participated in a team of 4 designers, and 18 members through weekly progress, road map, and general meetings. </li>
+                            <li>Design and conceptualize user interface for desktop-based game that aligns with company’s visual identity</li>
+                            <li>Currently organizing product research through collaboration and wireframes.
+                            </li>
                         </ul>
                     </div>
                 </div>
+                <div class="experience-card-content-back"></div>
             </div>
-            <div class="experience-card">
+            <div class="experience-card-front">
                 <div class="experience-card-content">
                     <div class="experience-card-date-location">
-                        <div class="date">March 21, 2024</div>
+                        <div class="date">March, 2022- June,2023</div>
                         <div class="location">San Diego, CA</div>
                     </div>
                     <div class="experience-card-title">
@@ -96,17 +98,19 @@
                     </div>
                     <div class="experience-card-description">
                         <ul>
-                            <li>Proficient in Figma/li>
-                            <li>html/CSS/Javascript</li>
-                            <li>Microsoft Excel</li>
+                            <li>Collaborated with team members and supervisors in weekly team meetings to strategize problem solving methods.</li>
+                            <li>Researchedand developed problem solving application and backend database website.</li>
+                            <li>Developed resilient strategies to surpass cultural foreign barriers.</li>
                         </ul>
                     </div>
                 </div>
+                <div class="experience-card-content-back"></div>
             </div>
-            <div class="experience-card">
+            <div class="experience-card-back"></div>
+            <div class="experience-card-front">
                 <div class="experience-card-content">
                     <div class="experience-card-date-location">
-                        <div class="date">March 21, 2024</div>
+                        <div class="date">April, 2022- June,2023</div>
                         <div class="location">San Diego, CA</div>
                     </div>
                     <div class="experience-card-title">
@@ -115,12 +119,13 @@
                     </div>
                     <div class="experience-card-description">
                         <ul>
-                            <li>Active communication skills</li>
-                            <li>Graphic Design</li>
-                            <li></li>
+                            <li>Collaborated with an executive team to execute impactful events, general body meetings, and auxiliaries.</li>
+                            <li>Created corresponding visual graphics for events significantly increasing engagement metrics by 23%.</li>
+                            <li>Experience in participating and planning marketing strategies for small and large-scale events.</li>
                         </ul>
                     </div>
                 </div>
+                <div class="experience-card-content-back"></div>
             </div>
         </div>
         <div class="centered-button-div"><a class="button-secondary" target="_blank" herf="Claire-Kuo-Resume-2024">Download Resume</a></div>
@@ -411,9 +416,9 @@
             for (let i = 0; i < subheadingDark.length; i++) {
                 subheadingDark[i].classList.toggle('darkmode-subheading');
             }
-        const experiencecardDark = document.querySelectorAll('.experience-card')
+        const experiencecardDark = document.querySelectorAll('.experience-card-front')
             for (let i = 0; i < experiencecardDark.length; i++) {
-                experiencecardDark[i].classList.toggle('darkmode-experience-card');
+                experiencecardDark[i].classList.toggle('darkmode-experience-card-front');
             }
         const experiencecarddatelocationDark = document.querySelectorAll('.experience-card-date-location')
             for (let i = 0; i < experiencecarddatelocationDark.length; i++) {
