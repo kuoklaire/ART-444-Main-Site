@@ -1,16 +1,40 @@
 /* TABLET VIEW */
 @media only screen and (max-width:768px) {
     /* images/button  */
-    .decor {
-        display:none;
+
+    .welcome {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    #sticker-star {
+        left: 550px;
+        top: 550px;
+    }
+    #sticker-butterfly {
+        display: none;
+    }
+    #sticker-rainbow {
+        left: 50px;
+        top: 500px;
+    }
+    #sticker-cherry {
+        left: 550px;
+        top: 200px;
+    }
+    #sticker-bow {
+        left: 60px;
+        top: 220px;
+    }
+    #sticker-flower {
+        display: none;
     }
     .button-primary {
         padding: 25px 40px 25px 40px;
-        font-size: 28px;
+        font-size: 26px;
     }
     .button-secondary {
         padding: 25px 40px 25px 40px;
-        font-size: 28px;
+        font-size: 26px;
     }
     .image {
         max-width: 600px;
@@ -23,10 +47,9 @@
     }   
     #header{
         margin-top: 40%;
-        margin-bottom: 10%;
+        margin-bottom: 30%;
         }
     section#about {
-        background-size: 768px 1100px;
         }
     .aboutme-header {
         font-size: 200%;
@@ -41,6 +64,8 @@
     .experience-card-column {
         flex-direction: column;
         align-items: center;
+        height: 100%;
+        width: 320px;
     }
     .experience-card{
         max-width: 380px;
@@ -50,16 +75,13 @@
         width: 350px;
         height: auto;
     }
-    .portfolio-description {
-        width: 350px;
-    }
     .portfolio-row{
         flex-direction: column;
     }
     .portfolio-gallery {
         grid-template-columns: repeat(1, 1fr);
-        gap /* Set one card per row /
-        gap: 30px; / Adjust gap as needed */
+        gap: 40px;
+        align-items: center;
     }
     /*contact*/
     .contact-section {
@@ -68,11 +90,27 @@
     label{
         font-size: 18px;
     }
+    .question {
+        font-size: 17px;
+    }
+    .down-button {
+        width: 15px;
+    height: 15px;
+    background-size: 15px 15px;
+    }
+    .faq-question-answer {
+        height: 75px;
+    }
 
     /*footer*/
     .footer-content{
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
+        padding-left: 10%;
+    }
+    .footer-links {
+        flex-direction: column; 
     }
     a.footerlink {
         font-size: 20px;
@@ -87,20 +125,89 @@
     .social_media {
         max-width:50px;
     }
+    .button-primary {
+        padding: 20px;
+        padding-left: 45px;
+        padding-right: 45px;
+        font-size: 21px;
+    }
+    .button-secondary {
+        padding: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
+        font-size: 21px;
+    }
+    
+    .social-media-links {
+        align-items: flex-start;
+        margin-left: 0px;
+    }
 }
-
 /* MOBILE VIEW */
 @media only screen and (max-width: 390px) {
+    .welcome {
+        align-content: center;
+
+    }
+    #header {
+        margin-bottom: 60%;
+        margin-top: 60%;
+    }
+    section#header {
+        height: 100%;
+    }
+    figure {
+        align-content: center;
+    }
     .image {
         width: 320px;
     }
-    #header {
-        margin-top: 80%;
-        margin-bottom: 80%;
+    h3 {
+        font-size: 20px;
     }
+    p{
+        font-size: 16px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    h4 {
+        font-size: 18px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    .aboutme-header h3 {
+        font-size: 21px;
+    }
+    .aboutme {
+        gap: 10px;
+    }
+    .experience-card-column {
+         height: 100%;
+        padding: 0% 0% 0% 0%;
+    }
+    #sticker-star {
+        display: none;
+    }
+    #sticker-rainbow {
+        top: 450px;
+        z-index: 0;
+    }
+    #sticker-cherry {
+        left: 260px;
+        top: 400px;
+        rotate: 40deg;
+    }
+    #sticker-bow {
+        left: 60px;
+        top: 150px;
+    }
+
     .subheading {
         font-size: 16px;
-        width: 320px;
+        margin-left: 0%;
+        margin-right: 0%;
     }
     .logo {
         width: 150px;
@@ -110,7 +217,7 @@
     }
     .aboutme-paragraph {
         font-size: 15px;
-        line-height: 130%;
+        line-height: 110%;
     }
  
     .continer {
@@ -121,16 +228,16 @@
     left: 21px;
     }
     .button-primary {
-        padding: 30px;
-        padding-left: 45px;
-        padding-right: 45px;
-        font-size: 24px;
+        padding: 15px;
+        padding-left: 25px;
+        padding-right: 25px;
+        font-size: 19px;
     }
     .button-secondary {
-        padding: 30px;
-        padding-left: 40px;
-        padding-right: 40px;
-        font-size: 24px;
+        padding: 17px;
+        padding-left: 27px;
+        padding-right: 27px;
+        font-size: 18px;
     }
     /*About*/
     #about {
@@ -141,41 +248,57 @@
         width: 340px;
     } 
     /*Portfolio*/
+   section#portfolio {
+    align-content: center;
+    }
     .portfolio-title {
-        font-size: 20px;
+        font-size: 18px;
+        width: 100%;
+    }
+    .portfolio-row {
+        align-content: center;
+        width: 100%;
     }
     .portfolio-description {
-        font-size: 20px;
+        font-size: 16px;
+        width: 100%;
     }
     .portfolio-date-location h4 {
-        font-size: 20px;
+        font-size: 15px;
     }
-    .mockup {
-        width: 200px;
-        height: 200px;
-        height: auto;
+    .experience-card-description {
+        width: 220px;
+    }
+
+    .portfolio-content {
+        width: 280px;
     }
     /*FAQs*/
     .question{
-        font-size: 20px;
+        font-size: 18px;
+        gap: 0px;
+        flex-direction: column;
     }
     .answer {
         padding: 5%;
     }
+    .faq-question-answer {
+        height: 100px;
+    }
+    
     /*Contact*/
     label{
-        font-size: 20px;
+        font-size: 18px;
     }
     input{
         font-size: 18px;
+        padding: 6%;
     }
     .mockup {
-      width: 350px;
+      width: 290px;
        height: auto;
      }
-    .portfolio-description {
-        width: 350px;
-     }
+
      .portfolio-row{
         flex-direction: column;
      }
@@ -190,8 +313,11 @@
     .social_media {
         width:45px;
     }
-    .social-media-links {
-        margin-left: 30%;
+    .footer-logo {
+    width: 150px;
+        height: auto;
+        position: relative;
+
     }
     .footer-links {
         display: flex;
@@ -210,7 +336,8 @@
         margin: 0 auto;
     }
     .aboutme-paragraph {
-        font-size: 24px;
+        font-size: 18px;
+        width: 100%;
     }
 }
 

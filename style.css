@@ -21,8 +21,6 @@ body {
     /*font: inherit;*/
     vertical-align:middle;
     z-index: 2;
-    background-image: url("images/background_stickers.png");
-    background-size: 100%;
 }
 
 .button-primary {
@@ -37,6 +35,80 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: center;
+}
+/*images */
+#sticker-star {
+    width: 80px;
+    height: 80px;
+    background-size: 80px 80px;
+    background-image: url(images/Portfolio_star.png);
+    rotate: 30deg;
+    background-repeat: no-repeat;
+    opacity: 60%;
+    position: absolute;
+    left: 1200px;
+    top: 600px;
+    z-index: -2;
+}
+#sticker-butterfly {
+    width: 80px;
+    height: 80px;
+    background-size: 80px 80px;
+    background-image: url(images/Portfolio_butterfly.png);
+    rotate: 20deg;
+    opacity: 60%;
+    position: absolute;
+    left: 950px;
+    top: 60px;
+    z-index: -2;
+}
+#sticker-rainbow {
+    width: 120px;
+    height: 80px;
+    background-size: 120px 80px;
+    background-image: url(images/Portfolio_rainbow.png);
+    rotate: -20deg;
+    opacity: 60%;
+    position: absolute;
+    left: 50px;
+    top: 600px;
+    z-index: -2;
+}
+#sticker-cherry {
+    width: 80px;
+    height: 80px;
+    background-size: 80px 80px;
+    background-image: url(images/Portfolio_cherry.png);
+    rotate: -20deg;
+    opacity: 60%;
+    position: absolute;
+    left: 1350px;
+    top: 220px;
+    z-index: -2;
+}
+#sticker-bow {
+    width: 80px;
+    height: 80px;
+    background-size: 80px 80px;
+    background-image: url(images/Portfolio_bow.png);
+    rotate: -20deg;
+    opacity: 60%;
+    position: absolute;
+    left: 60px;
+    top: 220px;
+    z-index: -2;
+}
+#sticker-flower {
+    width: 80px;
+    height: 100px;
+    background-size: 80px 100px;
+    background-image: url(images/Portfolio_flower.png);
+    rotate: -20deg;
+    opacity: 60%;
+    position: absolute;
+    right: 60px;
+    bottom: 120px;
+    z-index: -2;
 }
 .darkmode-button-primary {
     background-color:var(--color-medium-blue) !important;
@@ -54,6 +126,7 @@ body {
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    text-decoration: none;
 }
 .menu{
   width: 60px;
@@ -109,13 +182,7 @@ html {
     scroll-behavior: smooth;
 }
 
-/*images */
-.decor{
-    opacity: 60%;
-    z-index: 0;
-    transform: scale(0.7);
-    position: absolute;
-}
+
 
 /*font */
 .h1{
@@ -200,6 +267,7 @@ body {
 #header{
 margin-top: 20%;
 margin-bottom: 10%;
+height: 100%;
 }
 .nav-links {
     list-style: none;
@@ -235,15 +303,32 @@ margin-bottom: 10%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
+    width: 100%;
     max-width: 1000px;
     height: auto;
+    animation: gelatine 0.9s ;
+    animation-delay: 10ms;
+    z-index: 999;
+
 }
+
 .header_h2 {
     text-align: center;
+    z-index: 999;
+}
+figure.in-view {
+    animation: gelatine 0.9s ;
+    animation-delay: 20ms;
+    height: 100%;
+}
+@keyframes gelatine {
+    from, to { transform: scale(1, 1); }
+    25% { transform: scale(0.9, 1.1); }
+    50% { transform: scale(1.1, 0.9); }
+    75% { transform: scale(0.95, 1.05); }
 }
 section#header {
-    background-color: var(--main-background-color);
+    width: 100%;
 }
 
 /*about */
@@ -301,6 +386,7 @@ section#about {
     z-index: 4;
     margin-top: 10%;
     height: fit-content;
+    width: 80%;
     margin-bottom: 10%;
 }
 /*skills */
@@ -332,6 +418,7 @@ section#experience{
     margin-top: 8px;
     vertical-align: middle;
   }
+
 .experience-card-title {
     font-family: "Averia Serif Libre", serif;
     font-weight: 300;
@@ -357,13 +444,10 @@ section#experience{
     color: var(--color-dark-blue);
     flex-wrap: wrap;
     justify-content: left;
-    width: 280px;
+    width: 250px;
     height: auto;
 }
-.experience-card-front:hover > .experience-card-content {
-    cursor: pointer;
-    transform: rotateY('180deg');
-}
+
 
 .experience-card-front {
     background-color:var(--color-medium-blue);
@@ -371,16 +455,10 @@ section#experience{
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 5px;
-    display: flex;
-    height:360px;
+    height:auto;
     width: 100%;
-    align-items: center;
+    align-content: center;
     transition: transform 1500ms;
-}
-.experience-card-back {
-    background-image: url(images/Taiwan.jpg);
-    height: 100%;
-    width: 100%;
 }
 .experience-card-dark {
     background-color:var(--color-medium-blue);
@@ -389,12 +467,13 @@ section#experience{
     font-family: "Averia Serif Libre", serif;
     font-weight: 300;
     font-style: italic;
-    font-size: 15px;
+    font-size: 14px;
     color: var(--color-creme);
     display: flex;
     flex-direction: row;
     align-self: stretch;
-    gap:10%;
+    gap:7%;
+    
 }
 .location {
     text-align: right;
@@ -421,8 +500,8 @@ section#experience{
     flex: none;
     order: 1;
     flex-grow: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    width: 900px;
+    height: 100%;
 }
 
 /*portfolio */
@@ -448,6 +527,7 @@ section#experience{
     flex-direction: row;
     justify-content: center;
     padding-bottom: 7px;
+    gap: 10px;
 }
 .portfolio-date-location h4 {
     justify-content: space-between;
@@ -503,7 +583,7 @@ section#experience{
 
 /*FAQs */
 .faq-question-answer {
-    height: 100px;
+    height: 80px;
     overflow: hidden;
     border: 2px #243136;
     border-color: var(--color-medium-blue);
@@ -537,7 +617,7 @@ section#experience{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-left: auto;
     margin-right: auto;
-    font-size: 150%;
+    font-size: 120%;
     font-family: var(--display-font-family);
     color: var(--color-dark-blue); 
     display: flex;
@@ -580,7 +660,6 @@ margin: 5%;
     margin-left: auto;
     margin-right: auto;
     padding-top: 2%;
-    max-width: 960px;
     width: 100%;
 }
 label{
@@ -654,12 +733,12 @@ footer {
     justify-content: center;
     align-items: flex-start;
     padding: 5px;
-    gap: 33px;
+    gap: 25px;
 }
 a.footerlink {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: normal;
-    font-size: 160%;
+    font-size: 130%;
     color: #30444A;
 }
 .social_media_linkedin {
@@ -690,12 +769,6 @@ a.footerlink {
 .container{
     margin-top: 10%;
     margin-bottom: 10%;
-}
-
-.stickers {
-    background-image: url("images/background_stickers.png");
-    z-index: 2;
-    background-size: 100%;
 }
     /*dark mode*/
 .dark-mode-title {

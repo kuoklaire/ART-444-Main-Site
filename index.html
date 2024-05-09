@@ -5,6 +5,7 @@
     <title>Claire Kuo - Welcome to My Webpage!</title>
     <link href="style.css" rel="stylesheet">
     <link href="responsive.css" rel="stylesheet">
+    <link href="script.js" rel="stylesheet">
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
@@ -35,10 +36,16 @@
 </div>
 <!-- Main Header -->
 <section class="header" id="header">
-    <div><img alt="Welcome" class="welcome" src="images/Portfolio_Welcome.png"/></div>
+    <figure><div><img alt="Welcome" class="welcome" src="images/Portfolio_Welcome.png"/></div>
     <div class="subheading"><h2>to my collage of creativity!</h2></div>
+</figure>
+<div class="sticker" id="sticker-star"></div>
+<div class="sticker" id ="sticker-butterfly"></div>
+<div class="sticker" id="sticker-cherry"></div>
+<div class="sticker" id="sticker-rainbow"></div>
+<div class="sticker" id="sticker-bow"></div>
+<div class="sticker" id="sticker-flower"></div>
 </section>
-
 <!-- About Section -->
 <section id="about">
     <div class="container">
@@ -84,7 +91,6 @@
                         </ul>
                     </div>
                 </div>
-                <div class="experience-card-content-back"></div>
             </div>
             <div class="experience-card-front">
                 <div class="experience-card-content">
@@ -104,9 +110,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="experience-card-content-back"></div>
             </div>
-            <div class="experience-card-back"></div>
             <div class="experience-card-front">
                 <div class="experience-card-content">
                     <div class="experience-card-date-location">
@@ -125,10 +129,9 @@
                         </ul>
                     </div>
                 </div>
-                <div class="experience-card-content-back"></div>
             </div>
         </div>
-        <div class="centered-button-div"><a class="button-secondary" target="_blank" herf="Claire-Kuo-Resume-2024">Download Resume</a></div>
+        <div class="centered-button-div"><a class="button-secondary" target="_blank" href="https://cdn.discordapp.com/attachments/703800324523032606/1236913926483083334/Claire_Kuo-Resume_2024.pdf?ex=6639bd5c&is=66386bdc&hm=7391818fd9befdee646b405edb6884db026c47365cd9ebcda1e0f9a118e0c465&">Download Resume</a></div>
 
 </section>
 
@@ -141,30 +144,24 @@
         <div class="portfolio-gallery">
             <div class="portfolio-row">
                 <div class="portfolio-container">
-                    <div class="portfolio-date-location"><h4>Date</h4><h4>Location</h4></div>
+                    <div class="portfolio-date-location"><h4>Feb. 2024</h4><h4>San Diego, CA</h4></div>
                     <div><img alt="High School Conference Poster" class="mockup"
                               src="images/APSASDSU_HSC_Postermockup.png"/></div>
                     <div class="portfolio-content">
                         <div class="portfolio-title"><h4>High School Conference Poster Design</h4></div>
                         <div class="portfolio-description">
-                            <p2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac orci nec velit
-                                sagittis euismod quis non purus. Aliquam vel volutpat enim. Nulla sollicitudin ligula ac
-                                gravida finibus. Vestibulum enim metus, consequat sit amet maximus at, convallis posuere
-                                enim.
+                            <p2>I designed captivating visuals for a high school conference event hosted by APSA, centered around the theme 'Ready Player One.' My task was to create an eye-catching Instagram post and poster that would resonate with high school students.
                             </p2>
                         </div>
                     </div>
                 </div>
                 <div class="portfolio-container">
-                    <div class="portfolio-date-location"><h4>Date</h4><h4>Location</h4></div>
+                    <div class="portfolio-date-location"><h4>May 2023</h4><h4>San Diego, CA</h4></div>
                     <div><img alt="penguin book cover" class="mockup" src="images/bookcoverfinal_mockup.PNG"/></div>
                     <div class="portfolio-content">
-                        <div class="portfolio-title"><h4>Mailroom Backend Software Design</h4></div>
+                        <div class="portfolio-title"><h4>Famous Couple Peguin book design</h4></div>
                         <div class="portfolio-description">
-                            <p2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac orci nec velit
-                                sagittis euismod quis non purus. Aliquam vel volutpat enim. Nulla sollicitudin ligula ac
-                                gravida finibus. Vestibulum enim metus, consequat sit amet maximus at, convallis posuere
-                                enim.
+                            <p2>I created a book cover adhering to the iconic Penguin Classic layout, featuring the famous couple Sophie and Howl. The design uniquely captures their essence through a thematic motif, showcasing my ability to blend classic aesthetics with modern creativity.
                             </p2>
                         </div>
                     </div>
@@ -172,29 +169,23 @@
             </div>
             <div class="portfolio-row">
                 <div class="portfolio-container">
-                    <div class="portfolio-date-location"><h4>Date</h4><h4>Location</h4></div>
+                    <div class="portfolio-date-location"><h4>June 2023</h4><h4>Taiwan</h4></div>
                     <div><img alt="Mailroom Software UI Design" class="mockup" src="images/Mailroom Mockup.png"/></div>
                     <div class="portfolio-content">
-                        <div class="portfolio-title"><h4>Peguin Book Re-Design</h4></div>
+                        <div class="portfolio-title"><h4>Mailroom Backend UI design</h4></div>
                         <div class="portfolio-description">
-                            <p2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac orci nec velit
-                                sagittis euismod quis non purus. Aliquam vel volutpat enim. Nulla sollicitudin ligula ac
-                                gravida finibus. Vestibulum enim metus, consequat sit amet maximus at, convallis posuere
-                                enim.
+                            <p2>I designed a backend desktop UI for mailroom management at a monastery in Taiwan, developing an app and backend database. The project enabled efficient management of incoming mail and streamlined package notifications for residents.
                             </p2>
                         </div>
                     </div>
                 </div>
                 <div class="portfolio-container">
-                    <div class="portfolio-date-location"><h4>Date</h4><h4>Location</h4></div>
+                    <div class="portfolio-date-location"><h4>March 2024</h4><h4>San Diego, CA</h4></div>
                     <div><img alt="Shopping Bag" class="mockup" src="images/Shopping_Bag_Mockup_guide.png"/></div>
                     <div class="portfolio-content">
                         <div class="portfolio-title"><h4>Escape Room Packaging Design</h4></div>
                         <div class="portfolio-description">
-                            <p2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac orci nec velit
-                                sagittis euismod quis non purus. Aliquam vel volutpat enim. Nulla sollicitudin ligula ac
-                                gravida finibus. Vestibulum enim metus, consequat sit amet maximus at, convallis posuere
-                                enim.
+                            <p2>I was tasked to design a comprehensive branding package for an escape room, featuring a captivating logo,a sleek business card design, an engaging email template for customer communications, and a stylish branded bag for promotional purposes.
                             </p2>
                         </div>
                     </div>
@@ -202,31 +193,25 @@
             </div>
             <div class="portfolio-row">
                 <div class="portfolio-container">
-                    <div class="portfolio-date-location"><h4>Date</h4><h4>Location</h4></div>
+                    <div class="portfolio-date-location"><h4>March 2024</h4><h4>San Diego.CA</h4></div>
                     <div><img alt="Icon for Awareness" class="mockup"
                               src="images/ClaireKuo_IconforAwarenessMockup.jpg"/></div>
                     <div class="portfolio-content">
                         <div class="portfolio-title"><h4>Campaign for Awareness Poster Design</h4></div>
                         <div class="portfolio-description">
-                            <p2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac orci nec velit
-                                sagittis euismod quis non purus. Aliquam vel volutpat enim. Nulla sollicitudin ligula ac
-                                gravida finibus. Vestibulum enim metus, consequat sit amet maximus at, convallis posuere
-                                enim.
+                            <p2> I was tasked to design a comprehensive Campaign for Awareness poster for the CSU strike advocating for fair wages for teachers and staff, featuring a unique symbol that captured the cause's essence. Additionally, created a striking poster, engaging Instagram reel, and a captivating app icon to amplify the campaign's reach and impact.
                             </p2>
                         </div>
                     </div>
                 </div>
                 <div class="portfolio-container">
-                    <div class="portfolio-date-location"><h4>Date</h4><h4>Location</h4></div>
+                    <div class="portfolio-date-location"><h4>Feb. 2022</h4><h4>San Diego, CA</h4></div>
                     <div><img alt="Typography Fundamentals Book" class="mockup" src="images/Square_Book_Mockup.png"/>
                     </div>
                     <div class="portfolio-content">
                         <div class="portfolio-title"><h4>Bamboozled T-Shirt Design</h4></div>
                         <div class="portfolio-description">
-                            <p2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac orci nec velit
-                                sagittis euismod quis non purus. Aliquam vel volutpat enim. Nulla sollicitudin ligula ac
-                                gravida finibus. Vestibulum enim metus, consequat sit amet maximus at, convallis posuere
-                                enim.
+                            <p2>I entered a competition to create a design for APSA to captures the essence and aestehtic of the club.
                             </p2>
                         </div>
                     </div>
@@ -234,7 +219,7 @@
             </div>
             <div class="portfolio-row">
                 <div class="portfolio-container">
-                    <div class="portfolio-date-location"><h4>Date</h4><h4>Location</h4></div>
+                    <div class="portfolio-date-location"><h4>Feb. 2022</h4><h4>San Diego, CA</h4></div>
                     <div><img alt="Bamboozled T-Shirt" class="mockup" src="images/T-Shirt mockup.png"/></div>
                     <div class="portfolio-content">
                         <div class="portfolio-title"><h4> Type Fundamentals Book</h4></div>
@@ -265,7 +250,7 @@
         </div>
     </div>
     <div class="centered-button-div">
-        <button class="centered-button-div"><a class="button-primary" target="_blank" herf="">See More</a></div>
+         <div class="centered-button-div"><a class="button-primary" target="_blank"> See More</a></div>
     </div>
 </section>
 
@@ -320,15 +305,15 @@
             <div class="contact-form"></div>
             <div class="contact-section">
                 <label for="contact-input-title">First & Last name</label>
-                <input class="contact-input-form" type="ex:Jane Doe">
+                <input class="contact-input-form" type="ex:Jane Doe" id="name" name="name" required>
             </div>
             <div class="contact-section">
                 <label for="contact-input-title">Email Address</label>
-                <input class="contact-input-form" type="Email">
+                <input class="contact-input-form" type="Email" id="email" name="email" required>
             </div>
             <div class="contact-section">
                 <label for="contact-input-title">Subject</label>
-                <input class="contact-input-form" type="Subject">
+                <input class="contact-input-form" type="Subject" id="sbuject" name="subject" required>
             </div>
             <div class="contact-section">
                 <label for="contact-input-title">Leave a message!</label>
@@ -365,147 +350,7 @@
             <div class="copyright"><p>Copyright © 2024, All Rights Reserved</p></div>
         </div>
 </footer>
-<script>
-    const faqToggle = document.querySelectorAll('.faq-question-answer');
-
-    for (let i = 0; i < faqToggle.length; i++) {
-        faqToggle[i].addEventListener("click", faqOpen);
-        }
-    function faqOpen () {
-        var FAQButton = document.querySelectorAll('.faq-open');
-        iconDrop = null;
-        lastOpened = null;
-
-        var dropCont = this.nextElementSibling;
-        let icon = this.querySelector('.down-button');
-        icon.classList.toggle('up-button');
-
-        if (lastOpened && lastOpened !== dropCont)
-        lastOpened.classList.remove("down-button");
-        lastOpened = dropCont;
-
-        if (iconDrop && iconDrop !== icon)
-        iconDrop.classlist.remove("up-button");
-        iconDrop = icon;
-
-        this.classList.toggle('faq-open');
-    }
-    
-   
-    function myMenu() {
-        document.getElementById("mymenu").classList.toggle("open");
-        document.getElementById('menuButton').classList.toggle('close');
-    }
-    function myMenuLinks() {
-        document.getElementById("mymenu").classList.remove("open");
-        document.getElementById('menuButton').classList.remove('close');
-    }
-    function lmButton() {
-        document.getElementById("lmbutton").classList.toggle("activated-LMbutton");
-        document.getElementById("mymenu").classList.toggle("darkmode-mobile-menu-popout");
-       
-        const mainnavlinksDark = document.querySelectorAll('.main-nav-links')
-            for (let i = 0; i < mainnavlinksDark.length; i++) {
-                mainnavlinksDark[i].classList.toggle('darkmode-main-nav-links');
-            }
-        const buttonprimaryDark = document.querySelectorAll('.button-primary')
-            for (let i = 0; i < buttonprimaryDark.length; i++) {
-                buttonprimaryDark[i].classList.toggle('darkmode-button-primary');
-            }
-         const subheadingDark = document.querySelectorAll('.subheading')
-            for (let i = 0; i < subheadingDark.length; i++) {
-                subheadingDark[i].classList.toggle('darkmode-subheading');
-            }
-        const experiencecardDark = document.querySelectorAll('.experience-card-front')
-            for (let i = 0; i < experiencecardDark.length; i++) {
-                experiencecardDark[i].classList.toggle('darkmode-experience-card-front');
-            }
-        const experiencecarddatelocationDark = document.querySelectorAll('.experience-card-date-location')
-            for (let i = 0; i < experiencecarddatelocationDark.length; i++) {
-                experiencecarddatelocationDark[i].classList.toggle('darkmode-experience-card-date-location');
-            }
-        const portfoliodatelocationDark = document.querySelectorAll('.portfolio-date-location')
-            for (let i = 0; i < portfoliodatelocationDark.length; i++) {
-                portfoliodatelocationDark[i].classList.toggle('darkmode-portfolio-date-location');
-            }
-        const portfoliotitleDark = document.querySelectorAll('.portfolio-title')
-            for (let i = 0; i < portfoliotitleDark.length; i++) {
-                portfoliotitleDark[i].classList.toggle('darkmode-portfolio-title');
-            }
-        const portfoliodescriptionDark = document.querySelectorAll('.portfolio-description')
-            for (let i = 0; i < portfoliodescriptionDark.length; i++) {
-                portfoliodescriptionDark[i].classList.toggle('darkmode-portfolio-description');
-            }
-        const copyrightDark = document.querySelectorAll('.copyright')
-            for (let i = 0; i < copyrightDark.length; i++) {
-                copyrightDark[i].classList.toggle('darkmode-copyright');
-            }
-        const honeDark = document.querySelectorAll('.h1')
-            for (let i = 0; i < honeDark.length; i++) {
-                honeDark[i].classList.toggle('darkmode-h1');
-            }
-        const darkmodetitleDark = document.querySelectorAll('.dark-mode-title')
-            for (let i = 0; i < darkmodetitleDark.length; i++) {
-                darkmodetitleDark[i].classList.toggle('darkmode-dark-mode-title');
-            }
-        const labelDark = document.querySelectorAll('label')
-            for (let i = 0; i < labelDark.length; i++) {
-                labelDark[i].classList.toggle('darkmode-label');
-            }
-        const bodyDark = document.querySelectorAll('body')
-            for (let i = 0; i < bodyDark.length; i++) {
-                bodyDark[i].classList.toggle('darkmode-body');
-            }
-        const sectionheaderDark = document.querySelectorAll('section#header')
-            for (let i = 0; i < sectionheaderDark.length; i++) {
-                sectionheaderDark[i].classList.toggle('darkmode-sectionheader');
-            }
-        const sectionaboutDark = document.querySelectorAll('section#about')
-            for (let i = 0; i < sectionaboutDark.length; i++) {
-                sectionaboutDark[i].classList.toggle('darkmode-sectionabout');
-            }
-        const aboutmeheaderDark = document.querySelectorAll('.aboutme-header')
-            for (let i = 0; i < aboutmeheaderDark.length; i++) {
-                aboutmeheaderDark[i].classList.toggle('darkmode-aboutme-header');
-            }
-        const aboutmedescriptionDark = document.querySelectorAll('.aboutme-paragraph')
-            for (let i = 0; i < aboutmedescriptionDark.length; i++) {
-                aboutmedescriptionDark[i].classList.toggle('darkmode-aboutme-paragraph');
-            }
-        const socialmedialinkedinDark = document.querySelectorAll('.social_media_linkedin')
-            for (let i = 0; i < socialmedialinkedinDark.length; i++) {
-                socialmedialinkedinDark[i].classList.toggle('darkmode-social_media_linkedin');
-            }
-        const socialmediainstagramDark = document.querySelectorAll('.social_media_Instagram')
-            for (let i = 0; i < socialmediainstagramDark.length; i++) {
-                socialmediainstagramDark[i].classList.toggle('darkmode-social_media_Instagram');
-            }
-        const socialmediapinterestDark = document.querySelectorAll('.social_media_Pinterest')
-            for (let i = 0; i < socialmediapinterestDark.length; i++) {
-                socialmediapinterestDark[i].classList.toggle('darkmode-social_media_Pinterest');
-            }
-        const footerlinkDark = document.querySelectorAll('.footerlink')
-            for (let i = 0; i < footerlinkDark.length; i++) {
-                footerlinkDark[i].classList.toggle('darkmode-footerlink');
-            }
-    }
-            // function FAQtoggle () {
-            //     document.getElementsByClassName('faq-question-answer')[0].classList.toggle('faq-open');
-            // }
-
-          
-
-       
-
-
-    
-  
-    
-
-   
-
-    
+<script src="script.js">
 </script>
-<script src="script.js"></script>
 </body>
 </html>
